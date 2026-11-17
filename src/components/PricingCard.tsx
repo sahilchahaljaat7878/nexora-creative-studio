@@ -88,15 +88,27 @@ export function PricingCard({ service, pkg, className }: PricingCardProps) {
             {pkg.samples.map((sample) => (
               <figure key={sample.src} className="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
                 {sample.kind === "video" ? (
-                  <video
-                    src={sample.src}
-                    aria-label={localizeText(sample.alt)}
-                    preload="metadata"
-                    muted
-                    playsInline
-                    controls
-                    className="aspect-video w-full bg-ink object-cover"
-                  />
+                  <div className="relative">
+                    <video
+                      src={sample.src}
+                      aria-label={localizeText(sample.alt)}
+                      preload="metadata"
+                      muted
+                      playsInline
+                      loop
+                      controls
+                      onMouseEnter={(event) => event.currentTarget.play().catch(() => {})}
+                      onMouseLeave={(event) => { event.currentTarget.pause(); event.currentTarget.currentTime = 0; }}
+                      className="aspect-video w-full bg-ink object-cover"
+                    />
+                    <span className="pointer-events-none absolute inset-0 flex items-center justify-center transition-opacity duration-300 group-hover:opacity-0">
+                      <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-ink/60 text-white/90 backdrop-blur">
+                        <svg viewBox="0 0 24 24" className="h-5 w-5 translate-x-0.5" fill="currentColor" aria-hidden="true">
+                          <path d="M8 5v14l11-7z" />
+                        </svg>
+                      </span>
+                    </span>
+                  </div>
                 ) : (
                   <img
                     src={sample.src}

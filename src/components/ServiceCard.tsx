@@ -108,6 +108,9 @@ export function ServiceCard({ service, index, className }: ServiceCardProps) {
                       preload="metadata"
                       muted
                       playsInline
+                      loop
+                      onMouseEnter={(event) => event.currentTarget.play().catch(() => {})}
+                      onMouseLeave={(event) => { event.currentTarget.pause(); event.currentTarget.currentTime = 0; }}
                       className="aspect-video w-full bg-ink object-cover"
                     />
                   ) : (
@@ -122,9 +125,18 @@ export function ServiceCard({ service, index, className }: ServiceCardProps) {
                     />
                   )}
                   {sample.kind === "video" && (
-                    <span className="pointer-events-none absolute left-2 top-2 inline-flex items-center gap-1 rounded-full border border-white/15 bg-ink/70 px-2 py-0.5 font-mono text-[8px] font-semibold uppercase tracking-[0.14em] text-white/80 backdrop-blur">
-                      ▶ sample
-                    </span>
+                    <>
+                      <span className="pointer-events-none absolute left-2 top-2 inline-flex items-center gap-1 rounded-full border border-white/15 bg-ink/70 px-2 py-0.5 font-mono text-[8px] font-semibold uppercase tracking-[0.14em] text-white/80 backdrop-blur">
+                        ▶ video
+                      </span>
+                      <span className="pointer-events-none absolute inset-0 flex items-center justify-center transition-opacity duration-300 group-hover:opacity-0">
+                        <span className="flex h-9 w-9 items-center justify-center rounded-full border border-white/20 bg-ink/60 text-white/90 backdrop-blur">
+                          <svg viewBox="0 0 24 24" className="h-4 w-4 translate-x-0.5" fill="currentColor" aria-hidden="true">
+                            <path d="M8 5v14l11-7z" />
+                          </svg>
+                        </span>
+                      </span>
+                    </>
                   )}
                 </figure>
               ))}
