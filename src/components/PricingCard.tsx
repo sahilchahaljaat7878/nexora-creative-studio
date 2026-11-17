@@ -85,7 +85,7 @@ export function PricingCard({ service, pkg, className }: PricingCardProps) {
             {t("pricing.sampleOutput")}
           </p>
           <div className="mt-3 grid grid-cols-2 gap-2.5">
-            {pkg.samples.map((sample) => (
+            {pkg.samples.map((sample, sampleIndex) => (
               <figure key={sample.src} className="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
                 {sample.kind === "video" ? (
                   <div className="relative">
@@ -96,6 +96,7 @@ export function PricingCard({ service, pkg, className }: PricingCardProps) {
                       muted
                       playsInline
                       loop
+                      autoPlay={sampleIndex === 0}
                       controls
                       onMouseEnter={(event) => event.currentTarget.play().catch(() => {})}
                       onMouseLeave={(event) => { event.currentTarget.pause(); event.currentTarget.currentTime = 0; }}

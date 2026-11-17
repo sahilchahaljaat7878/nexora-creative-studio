@@ -88,15 +88,29 @@ function ServiceDetailContent({ service }: { service: Service }) {
           <div className="grid items-start gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
             <Reveal>
               <div className="ring-gradient relative overflow-hidden rounded-[28px]">
-                <img
-                  src={service.image}
-                  alt={localizeText(service.imageAlt)}
-                  width={1000}
-                  height={750}
-                  loading="eager"
-                  decoding="async"
-                  className="h-auto w-full object-cover"
-                />
+                {service.video ? (
+                  <video
+                    src={service.video}
+                    poster={service.image}
+                    aria-label={localizeText(service.imageAlt)}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="metadata"
+                    className="h-auto w-full object-cover"
+                  />
+                ) : (
+                  <img
+                    src={service.image}
+                    alt={localizeText(service.imageAlt)}
+                    width={1000}
+                    height={750}
+                    loading="eager"
+                    decoding="async"
+                    className="h-auto w-full object-cover"
+                  />
+                )}
                 <div className="absolute inset-0 bg-gradient-to-t from-ink-900/60 via-transparent to-transparent" />
                 <span className="absolute left-4 top-4 flex items-center gap-2 rounded-full border border-white/15 bg-ink/65 px-3 py-1.5 font-mono text-[9px] uppercase tracking-[0.2em] text-white/70 backdrop-blur-md">
                   <Icon className="h-3 w-3" aria-hidden="true" />
