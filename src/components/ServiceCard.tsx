@@ -30,15 +30,29 @@ export function ServiceCard({ service, index, className }: ServiceCardProps) {
       )}
     >
       <div className="relative aspect-[16/10] overflow-hidden">
-        <img
-          src={service.image}
-          alt={localizeText(service.imageAlt)}
-          width={1000}
-          height={750}
-          loading="lazy"
-          decoding="async"
-          className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.05]"
-        />
+        {service.video ? (
+          <video
+            src={service.video}
+            poster={service.image}
+            aria-label={localizeText(service.imageAlt)}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.05]"
+          />
+        ) : (
+          <img
+            src={service.image}
+            alt={localizeText(service.imageAlt)}
+            width={1000}
+            height={750}
+            loading="lazy"
+            decoding="async"
+            className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.05]"
+          />
+        )}
         <div className="absolute inset-0 bg-gradient-to-t from-ink-800 via-ink-800/10 to-transparent" />
         <div
           className={cn(

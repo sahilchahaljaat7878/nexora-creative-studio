@@ -34,6 +34,8 @@ export interface Service {
   packages: ServicePackage[];
   image: string;
   imageAlt: Localized;
+  /** Optional looping video used as the card hero (e.g. AI Video Creation). */
+  video?: string;
   icon: ServiceIcon;
   accent: {
     card: string;
@@ -522,6 +524,7 @@ export const services: Service[] = [
       en: "Cinematic AI video still with a glowing abstract landscape",
       hi: "चमकते एब्सट्रैक्ट लैंडस्केप वाला सिनेमैटिक AI वीडियो स्टिल",
     },
+    video: "/videos/samples/ai-video-30-60-1.mp4",
     icon: "clapperboard",
     accent: {
       card: "from-indigo-500/25 via-blue-500/10 to-transparent",
