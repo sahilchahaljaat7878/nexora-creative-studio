@@ -18,8 +18,9 @@ export function ServiceCard({ service, index, className }: ServiceCardProps) {
   const Icon = serviceIconMap[service.icon];
   const startingPrice = lowestServicePrice(service.packages.map((pkg) => pkg.pricingKey));
   const detailPath = `/services/${service.slug}`;
-  /** Sample outputs of the entry package, so visitors see what the price buys. */
-  const entrySamples = service.packages[0]?.samples ?? [];
+  /** Sample outputs of the first package that has them (first two on the card), so visitors see what the price buys. */
+  const entrySamples =
+    service.packages.find((pkg) => pkg.samples?.length)?.samples?.slice(0, 2) ?? [];
 
   return (
     <article
@@ -98,17 +99,33 @@ export function ServiceCard({ service, index, className }: ServiceCardProps) {
               {entrySamples.map((sample) => (
                 <figure
                   key={sample.src}
-                  className="overflow-hidden rounded-xl border border-white/10 bg-white/[0.03]"
+                  className="relative overflow-hidden rounded-xl border border-white/10 bg-white/[0.03]"
                 >
-                  <img
-                    src={sample.src}
-                    alt={localizeText(sample.alt)}
-                    width={640}
-                    height={800}
-                    loading="lazy"
-                    decoding="async"
-                    className="aspect-[4/5] w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
+                  {sample.kind === "video" ? (
+                    <video
+                      src={sample.src}
+                      aria-label={localizeText(sample.alt)}
+                      preload="metadata"
+                      muted
+                      playsInline
+                      className="aspect-video w-full bg-ink object-cover"
+                    />
+                  ) : (
+                    <img
+                      src={sample.src}
+                      alt={localizeText(sample.alt)}
+                      width={640}
+                      height={800}
+                      loading="lazy"
+                      decoding="async"
+                      className="aspect-[4/5] w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  )}
+                  {sample.kind === "video" && (
+                    <span className="pointer-events-none absolute left-2 top-2 inline-flex items-center gap-1 rounded-full border border-white/15 bg-ink/70 px-2 py-0.5 font-mono text-[8px] font-semibold uppercase tracking-[0.14em] text-white/80 backdrop-blur">
+                      ▶ sample
+                    </span>
+                  )}
                 </figure>
               ))}
             </div>

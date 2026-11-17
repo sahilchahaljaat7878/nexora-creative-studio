@@ -87,15 +87,27 @@ export function PricingCard({ service, pkg, className }: PricingCardProps) {
           <div className="mt-3 grid grid-cols-2 gap-2.5">
             {pkg.samples.map((sample) => (
               <figure key={sample.src} className="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
-                <img
-                  src={sample.src}
-                  alt={localizeText(sample.alt)}
-                  width={640}
-                  height={800}
-                  loading="lazy"
-                  decoding="async"
-                  className="aspect-[4/5] w-full object-cover"
-                />
+                {sample.kind === "video" ? (
+                  <video
+                    src={sample.src}
+                    aria-label={localizeText(sample.alt)}
+                    preload="metadata"
+                    muted
+                    playsInline
+                    controls
+                    className="aspect-video w-full bg-ink object-cover"
+                  />
+                ) : (
+                  <img
+                    src={sample.src}
+                    alt={localizeText(sample.alt)}
+                    width={640}
+                    height={800}
+                    loading="lazy"
+                    decoding="async"
+                    className="aspect-[4/5] w-full object-cover"
+                  />
+                )}
               </figure>
             ))}
           </div>

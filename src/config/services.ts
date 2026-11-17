@@ -7,6 +7,8 @@ export interface PackageSample {
   /** Path inside /public, e.g. "/images/samples/ai-photo-street.webp" */
   src: string;
   alt: Localized;
+  /** Defaults to "image". Use "video" for .mp4/.webm clips. */
+  kind?: "image" | "video";
 }
 
 export interface ServicePackage {
@@ -483,6 +485,13 @@ export const services: Service[] = [
             "लैंडस्केप + वर्टिकल एक्सपोर्ट",
           ],
         },
+        samples: [
+          { src: "/videos/samples/ai-video-30-60-1.mp4", kind: "video", alt: { en: "AI-generated cinematic sample 01 - dense forest scene", hi: "AI-जनरेटेड सिनेमैटिक नमूना 01 - घना जंगल सीन" } },
+          { src: "/videos/samples/ai-video-30-60-2.mp4", kind: "video", alt: { en: "AI-generated cinematic sample 02 - wide old setting", hi: "AI-जनरेटेड सिनेमैटिक नमूना 02 - चौड़ा पुराना सेटिंग" } },
+          { src: "/videos/samples/ai-video-30-60-3.mp4", kind: "video", alt: { en: "AI-generated cinematic sample 03 - ground-level mist", hi: "AI-जनरेटेड सिनेमैटिक नमूना 03 - ज़मीन पर धुंध" } },
+          { src: "/videos/samples/ai-video-30-60-4.mp4", kind: "video", alt: { en: "AI-generated cinematic sample 04 - dark jungle", hi: "AI-जनरेटेड सिनेमैटिक नमूना 04 - अंधेरा जंगल" } },
+          { src: "/videos/samples/ai-video-30-60-5.mp4", kind: "video", alt: { en: "AI-generated cinematic sample 05 - old jungle scene", hi: "AI-जनरेटेड सिनेमैटिक नमूना 05 - पुराना जंगल सीन" } },
+        ],
         popular: true,
       },
       {
