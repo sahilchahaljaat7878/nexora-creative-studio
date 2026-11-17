@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="750" viewBox="0 0 1000 750" role="img">
+<defs>
+      <linearGradient id="bg-svc4" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#140C27" /><stop offset="0.55" stop-color="#0B0814" /><stop offset="1" stop-color="#08080D" />
+      </linearGradient>
+      <radialGradient id="glow-svc4" cx="50%" cy="50%" r="50%">
+        <stop offset="0" stop-color="#6366F1" stop-opacity="0.35" /><stop offset="1" stop-color="#6366F1" stop-opacity="0" />
+      </radialGradient>
+      <filter id="blur-svc4"><feGaussianBlur stdDeviation="55" /></filter>
+      <filter id="grain-svc4" x="0" y="0" width="100%" height="100%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch" />
+        <feColorMatrix type="saturate" values="0" />
+        <feComponentTransfer><feFuncA type="linear" slope="0.3" /></feComponentTransfer>
+      </filter>
+    </defs>
+    <rect width="1000" height="750" fill="url(#bg-svc4)" />
+    <circle cx="730" cy="340" r="340" fill="url(#glow-svc4)" filter="url(#blur-svc4)" />
+    <g opacity="0.18" stroke="#FFFFFF">
+      <path d="M0 150 H1000" /><path d="M0 300 H1000" /><path d="M0 450 H1000" /><path d="M0 600 H1000" />
+      <path d="M200 0 V750" /><path d="M400 0 V750" /><path d="M600 0 V750" /><path d="M800 0 V750" />
+    </g>
+    <circle cx="720" cy="380" r="130" fill="#6366F1" opacity="0.18" />
+      <circle cx="720" cy="380" r="90" fill="none" stroke="#6366F1" stroke-opacity="0.7" />
+      <path d="M700 344 L756 380 L700 416 Z" fill="#FFFFFF" />
+      <path d="M470 560 L560 500 L650 550 L740 490 L840 550 L940 500 L980 530" stroke="#6366F1" stroke-width="2" fill="none" opacity="0.5" />
+      <ellipse cx="720" cy="560" rx="240" ry="40" fill="none" stroke="#FFFFFF" stroke-opacity="0.1" />
+    <text x="56" y="96" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" letter-spacing="5" fill="#FFFFFF" opacity="0.65">SERVICE 04 — MOTION</text>
+    <text x="56" y="664" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="44" font-weight="700" letter-spacing="-1" fill="#FFFFFF">AI Video Creation</text>
+    <rect x="56" y="692" width="56" height="3" rx="1.5" fill="#6366F1" />
+    <rect x="24" y="24" width="952" height="702" fill="none" stroke="#FFFFFF" stroke-opacity="0.1" />
+    <rect width="1000" height="750" filter="url(#grain-svc4)" opacity="0.22" style="mix-blend-mode:overlay" />
+  
+</svg>

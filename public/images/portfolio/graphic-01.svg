@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img">
+<defs>
+      <linearGradient id="bg-id1" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#0E0C14" /><stop offset="1" stop-color="#08080D" />
+      </linearGradient>
+      <linearGradient id="mono-id1" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#A855F7" /><stop offset="1" stop-color="#6366F1" />
+      </linearGradient>
+      <radialGradient id="glow-id1" cx="50%" cy="50%" r="50%">
+        <stop offset="0" stop-color="#8B5CF6" stop-opacity="0.35" /><stop offset="1" stop-color="#8B5CF6" stop-opacity="0" />
+      </radialGradient>
+      <filter id="blur-id1"><feGaussianBlur stdDeviation="60" /></filter>
+      <filter id="grain-id1" x="0" y="0" width="100%" height="100%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch" />
+        <feColorMatrix type="saturate" values="0" />
+        <feComponentTransfer><feFuncA type="linear" slope="0.3" /></feComponentTransfer>
+      </filter>
+    </defs>
+    <rect width="1200" height="1200" fill="url(#bg-id1)" />
+    <circle cx="880" cy="260" r="380" fill="url(#glow-id1)" filter="url(#blur-id1)" />
+    <rect x="56" y="56" width="1088" height="1088" fill="none" stroke="#FFFFFF" stroke-opacity="0.1" />
+    <text x="96" y="130" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" letter-spacing="6" fill="#FFFFFF" opacity="0.7">MONOGRAM — IDENTITY SYSTEM</text>
+    <text x="1104" y="130" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="12" letter-spacing="4" fill="#A1A1AA" text-anchor="end">STUDY 01 / 2026</text>
+    <g>
+      <circle cx="400" cy="500" r="230" fill="#0D0A16" stroke="#FFFFFF" stroke-opacity="0.14" />
+      <circle cx="400" cy="500" r="180" fill="url(#mono-id1)" opacity="0.16" />
+      <circle cx="400" cy="500" r="180" fill="none" stroke="#FFFFFF" stroke-opacity="0.25" />
+      <path d="M330 590 V410 L470 590 V410" stroke="#FFFFFF" stroke-width="26" stroke-linecap="square" fill="none" />
+      <circle cx="470" cy="386" r="13" fill="#A855F7" />
+      <circle cx="400" cy="500" r="260" fill="none" stroke="#A855F7" stroke-opacity="0.25" stroke-dasharray="2 10" />
+    </g>
+    <g>
+      <text x="720" y="404" font-family="Georgia, 'Times New Roman', serif" font-size="150" fill="#FFFFFF">Aa</text>
+      <text x="720" y="450" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="12" letter-spacing="4" fill="#A1A1AA">SORA / PLUS JAKARTA SANS</text>
+      <line x1="720" y1="486" x2="1040" y2="486" stroke="#FFFFFF" stroke-opacity="0.16" />
+      <text x="720" y="530" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" letter-spacing="3" fill="#A1A1AA">ABCDEFGHIJKLMNOPQRSTUVWXYZ</text>
+      <text x="720" y="558" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" letter-spacing="3" fill="#FFFFFF" opacity="0.55">0123456789 — ₹ % &amp;</text>
+    </g>
+    <g>
+      <text x="96" y="832" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" letter-spacing="4" fill="#A1A1AA">COLOUR SYSTEM</text>
+      <rect x="96" y="858" width="164" height="88" rx="4" fill="#A855F7" />
+      <rect x="276" y="858" width="164" height="88" rx="4" fill="#6366F1" />
+      <rect x="456" y="858" width="164" height="88" rx="4" fill="#11111B" stroke="#FFFFFF" stroke-opacity="0.14" />
+      <rect x="636" y="858" width="164" height="88" rx="4" fill="#F4F0E8" />
+      <text x="96" y="974" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" letter-spacing="2" fill="#A1A1AA">A855F7</text>
+      <text x="276" y="974" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" letter-spacing="2" fill="#A1A1AA">6366F1</text>
+      <text x="456" y="974" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" letter-spacing="2" fill="#A1A1AA">11111B</text>
+      <text x="636" y="974" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" letter-spacing="2" fill="#A1A1AA">F4F0E8</text>
+    </g>
+    <g>
+      <rect x="844" y="832" width="260" height="160" rx="8" fill="#141020" stroke="#FFFFFF" stroke-opacity="0.12" />
+      <circle cx="884" cy="872" r="16" fill="#A855F7" />
+      <text x="912" y="878" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="2" fill="#FFFFFF">AURA</text>
+      <text x="872" y="932" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="20" font-weight="600" fill="#FFFFFF">Aura Studio</text>
+      <text x="872" y="956" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" letter-spacing="2" fill="#A1A1AA">CREATIVE DIRECTION</text>
+      <line x1="872" y1="970" x2="1000" y2="970" stroke="#FFFFFF" stroke-opacity="0.14" />
+      <text x="872" y="970" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="8" letter-spacing="1" fill="#A1A1AA">hello@aura.studio</text>
+    </g>
+    <rect x="96" y="1040" width="1008" height="1" fill="#FFFFFF" opacity="0.1" />
+    <text x="96" y="1090" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" letter-spacing="4" fill="#A1A1AA">IDENTITY CONCEPT — LOGO / TYPE / COLOUR / COLLATERAL</text>
+    <rect width="1200" height="1200" filter="url(#grain-id1)" opacity="0.25" style="mix-blend-mode:overlay" />
+  
+</svg>

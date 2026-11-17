@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img">
+<defs>
+      <linearGradient id="bg-yt1" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#1A0726" /><stop offset="0.55" stop-color="#0B0612" /><stop offset="1" stop-color="#120A2C" />
+      </linearGradient>
+      <radialGradient id="glow-yt1" cx="50%" cy="50%" r="50%">
+        <stop offset="0" stop-color="#A855F7" stop-opacity="0.55" /><stop offset="1" stop-color="#A855F7" stop-opacity="0" />
+      </radialGradient>
+      <linearGradient id="ring-yt1" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#A855F7" /><stop offset="0.6" stop-color="#6366F1" /><stop offset="1" stop-color="#EC4899" />
+      </linearGradient>
+      <filter id="blur-yt1"><feGaussianBlur stdDeviation="45" /></filter>
+      <filter id="grain-yt1" x="0" y="0" width="100%" height="100%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch" />
+        <feColorMatrix type="saturate" values="0" />
+        <feComponentTransfer><feFuncA type="linear" slope="0.4" /></feComponentTransfer>
+      </filter>
+    </defs>
+    <rect width="1280" height="720" fill="url(#bg-yt1)" />
+    <circle cx="1000" cy="330" r="330" fill="url(#glow-yt1)" filter="url(#blur-yt1)" />
+    <g opacity="0.14" stroke="#FFFFFF">
+      <path d="M0 180 H1280" /><path d="M0 360 H1280" /><path d="M0 540 H1280" />
+      <path d="M320 0 V720" /><path d="M640 0 V720" /><path d="M960 0 V720" />
+    </g>
+    <g>
+      <circle cx="1030" cy="340" r="150" fill="none" stroke="url(#ring-yt1)" stroke-width="34" opacity="0.9" />
+      <circle cx="1030" cy="340" r="94" fill="#0D0715" stroke="#FFFFFF" stroke-opacity="0.18" />
+      <path d="M1008 302 L1072 340 L1008 378 Z" fill="#FFFFFF" />
+      <circle cx="1188" cy="220" r="10" fill="#EC4899" />
+      <circle cx="880" cy="510" r="6" fill="#22D3EE" />
+    </g>
+    <text x="76" y="118" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="18" letter-spacing="8" fill="#A855F7">THE CREATIVE LAB</text>
+    <text x="72" y="300" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="128" font-weight="300" letter-spacing="6" fill="#FFFFFF" opacity="0.92">DESIGN</text>
+    <text x="72" y="438" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="142" font-weight="800" letter-spacing="-4" fill="#FFFFFF">SMARTER.</text>
+    <rect x="74" y="486" width="300" height="8" rx="4" fill="#A855F7" />
+    <text x="76" y="552" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="19" letter-spacing="4" fill="#A1A1AA">AI + DESIGN WORKFLOW — EP. 04</text>
+    <g>
+      <rect x="76" y="618" width="42" height="42" rx="21" fill="#A855F7" />
+      <text x="97" y="646" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="800" fill="#0B0612" text-anchor="middle">N</text>
+      <text x="132" y="634" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="2" fill="#FFFFFF">NEXORA STUDIO</text>
+      <text x="132" y="650" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" letter-spacing="2" fill="#A1A1AA">CREATIVE DIGITAL SOLUTIONS</text>
+    </g>
+    <rect x="1190" y="606" width="40" height="42" rx="6" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" />
+    <text x="1210" y="632" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">4K</text>
+    <rect x="26" y="26" width="1228" height="668" fill="none" stroke="#FFFFFF" stroke-opacity="0.12" />
+    <rect width="1280" height="720" filter="url(#grain-yt1)" opacity="0.22" style="mix-blend-mode:overlay" />
+  
+</svg>

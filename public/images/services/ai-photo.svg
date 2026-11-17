@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="750" viewBox="0 0 1000 750" role="img">
+<defs>
+      <linearGradient id="bg-svc1" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#140C27" /><stop offset="0.55" stop-color="#0B0814" /><stop offset="1" stop-color="#08080D" />
+      </linearGradient>
+      <radialGradient id="glow-svc1" cx="50%" cy="50%" r="50%">
+        <stop offset="0" stop-color="#EC4899" stop-opacity="0.35" /><stop offset="1" stop-color="#EC4899" stop-opacity="0" />
+      </radialGradient>
+      <filter id="blur-svc1"><feGaussianBlur stdDeviation="55" /></filter>
+      <filter id="grain-svc1" x="0" y="0" width="100%" height="100%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch" />
+        <feColorMatrix type="saturate" values="0" />
+        <feComponentTransfer><feFuncA type="linear" slope="0.3" /></feComponentTransfer>
+      </filter>
+    </defs>
+    <rect width="1000" height="750" fill="url(#bg-svc1)" />
+    <circle cx="730" cy="340" r="340" fill="url(#glow-svc1)" filter="url(#blur-svc1)" />
+    <g opacity="0.18" stroke="#FFFFFF">
+      <path d="M0 150 H1000" /><path d="M0 300 H1000" /><path d="M0 450 H1000" /><path d="M0 600 H1000" />
+      <path d="M200 0 V750" /><path d="M400 0 V750" /><path d="M600 0 V750" /><path d="M800 0 V750" />
+    </g>
+    <ellipse cx="720" cy="380" rx="150" ry="196" fill="#1A1128" stroke="#EC4899" stroke-opacity="0.4" />
+      <path d="M540 750 C560 620 640 560 720 560 C800 560 880 620 900 750 Z" fill="#130D1E" />
+      <path d="M816 250 C858 320 862 420 824 500" stroke="#EC4899" stroke-width="5" fill="none" opacity="0.8" stroke-linecap="round" />
+      <circle cx="720" cy="380" r="250" fill="none" stroke="#FFFFFF" stroke-opacity="0.08" />
+    <text x="56" y="96" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" letter-spacing="5" fill="#FFFFFF" opacity="0.65">SERVICE 01 — AI IMAGERY</text>
+    <text x="56" y="664" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="44" font-weight="700" letter-spacing="-1" fill="#FFFFFF">AI Photo Creation</text>
+    <rect x="56" y="692" width="56" height="3" rx="1.5" fill="#EC4899" />
+    <rect x="24" y="24" width="952" height="702" fill="none" stroke="#FFFFFF" stroke-opacity="0.1" />
+    <rect width="1000" height="750" filter="url(#grain-svc1)" opacity="0.22" style="mix-blend-mode:overlay" />
+  
+</svg>

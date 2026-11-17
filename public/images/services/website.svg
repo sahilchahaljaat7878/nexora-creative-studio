@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="750" viewBox="0 0 1000 750" role="img">
+<defs>
+      <linearGradient id="bg-svc5" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#140C27" /><stop offset="0.55" stop-color="#0B0814" /><stop offset="1" stop-color="#08080D" />
+      </linearGradient>
+      <radialGradient id="glow-svc5" cx="50%" cy="50%" r="50%">
+        <stop offset="0" stop-color="#22D3EE" stop-opacity="0.35" /><stop offset="1" stop-color="#22D3EE" stop-opacity="0" />
+      </radialGradient>
+      <filter id="blur-svc5"><feGaussianBlur stdDeviation="55" /></filter>
+      <filter id="grain-svc5" x="0" y="0" width="100%" height="100%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch" />
+        <feColorMatrix type="saturate" values="0" />
+        <feComponentTransfer><feFuncA type="linear" slope="0.3" /></feComponentTransfer>
+      </filter>
+    </defs>
+    <rect width="1000" height="750" fill="url(#bg-svc5)" />
+    <circle cx="730" cy="340" r="340" fill="url(#glow-svc5)" filter="url(#blur-svc5)" />
+    <g opacity="0.18" stroke="#FFFFFF">
+      <path d="M0 150 H1000" /><path d="M0 300 H1000" /><path d="M0 450 H1000" /><path d="M0 600 H1000" />
+      <path d="M200 0 V750" /><path d="M400 0 V750" /><path d="M600 0 V750" /><path d="M800 0 V750" />
+    </g>
+    <rect x="440" y="180" width="560" height="420" rx="16" fill="#0B0B15" stroke="#FFFFFF" stroke-opacity="0.15" />
+      <rect x="440" y="180" width="560" height="40" rx="16" fill="#FFFFFF" opacity="0.05" />
+      <circle cx="470" cy="200" r="5" fill="#22D3EE" /><circle cx="488" cy="200" r="5" fill="#FFFFFF" opacity="0.3" />
+      <text x="490" y="300" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="42" font-weight="700" fill="#FFFFFF">Studio</text>
+      <text x="490" y="348" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="42" font-weight="700" fill="#22D3EE">website.</text>
+      <rect x="490" y="384" width="160" height="8" rx="4" fill="#FFFFFF" opacity="0.25" />
+      <rect x="490" y="430" width="120" height="36" rx="18" fill="#22D3EE" />
+      <circle cx="880" cy="350" r="90" fill="#22D3EE" opacity="0.2" />
+      <rect x="820" y="290" width="140" height="140" rx="70" fill="none" stroke="#22D3EE" stroke-opacity="0.4" />
+    <text x="56" y="96" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" letter-spacing="5" fill="#FFFFFF" opacity="0.65">SERVICE 05 — DIGITAL</text>
+    <text x="56" y="664" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="44" font-weight="700" letter-spacing="-1" fill="#FFFFFF">Website Development</text>
+    <rect x="56" y="692" width="56" height="3" rx="1.5" fill="#22D3EE" />
+    <rect x="24" y="24" width="952" height="702" fill="none" stroke="#FFFFFF" stroke-opacity="0.1" />
+    <rect width="1000" height="750" filter="url(#grain-svc5)" opacity="0.22" style="mix-blend-mode:overlay" />
+  
+</svg>

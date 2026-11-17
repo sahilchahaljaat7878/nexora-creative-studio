@@ -1,0 +1,251 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+    --page-glow: rgba(139, 92, 246, 0.16);
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: 6.5rem;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-ink font-sans text-white antialiased;
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% -10%, rgba(139, 92, 246, 0.16), transparent 60%),
+      radial-gradient(ellipse 60% 40% at 100% 20%, rgba(99, 102, 241, 0.06), transparent 60%);
+    background-attachment: fixed;
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background: rgba(168, 85, 247, 0.35);
+    color: #fff;
+  }
+
+  :focus-visible {
+    outline: 2px solid theme("colors.brand.violet");
+    outline-offset: 3px;
+  }
+
+  /* Custom scrollbar */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(139, 92, 246, 0.45) #0b0b12;
+  }
+  *::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  *::-webkit-scrollbar-track {
+    background: #0b0b12;
+  }
+  *::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #8b5cf6, #6366f1);
+    border-radius: 999px;
+    border: 2px solid #0b0b12;
+  }
+
+  html[lang="hi"] {
+    letter-spacing: 0;
+  }
+
+  html[lang="hi"] h1,
+  html[lang="hi"] h2,
+  html[lang="hi"] h3 {
+    line-height: 1.22;
+    letter-spacing: -0.01em;
+  }
+
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(0.7);
+    cursor: pointer;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8;
+  }
+
+  .section-pad {
+    @apply py-20 md:py-28;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-3 font-mono text-[11px] font-medium uppercase tracking-[0.28em] text-violet-300;
+  }
+
+  .eyebrow-dash {
+    @apply inline-block h-px w-8 bg-gradient-to-r from-brand-violet to-transparent;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-white via-violet-200 to-brand-purple bg-clip-text text-transparent;
+  }
+
+  .gradient-text-violet {
+    @apply bg-gradient-to-r from-violet-300 via-brand-violet to-brand-indigo bg-clip-text text-transparent;
+  }
+
+  .glass {
+    @apply border border-white/10 bg-white/[0.035] backdrop-blur-xl;
+  }
+
+  .glass-strong {
+    @apply border border-white/12 bg-ink-800/80 backdrop-blur-2xl;
+  }
+
+  .hairline {
+    @apply border-t border-white/10;
+  }
+
+  .card-sheen {
+    background-image: linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.07) 0%,
+      rgba(255, 255, 255, 0.015) 40%,
+      rgba(139, 92, 246, 0.05) 100%
+    );
+  }
+
+  .ring-gradient {
+    position: relative;
+  }
+  .ring-gradient::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(140deg, rgba(255, 255, 255, 0.25), rgba(139, 92, 246, 0.45), rgba(255, 255, 255, 0.04));
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  .prose-legal p {
+    @apply mb-4 text-[15px] leading-relaxed text-muted last:mb-0;
+  }
+
+  .field-label {
+    @apply mb-2 block text-[11px] font-semibold uppercase tracking-[0.12em] text-white/55;
+  }
+
+  .field-input {
+    @apply w-full rounded-xl border border-white/15 bg-white/[0.035] px-4 py-3 text-sm text-white placeholder:text-white/25 transition-colors duration-200 hover:border-white/20 focus:border-brand-violet/60 focus:bg-white/[0.05] focus:outline-none;
+  }
+
+  .field-input option {
+    background-color: #11111b;
+    color: #ffffff;
+  }
+
+  .field-error {
+    @apply mt-1.5 text-[11px] leading-relaxed text-rose-300;
+  }
+
+  .field-hint {
+    @apply mt-1.5 text-[11px] leading-relaxed text-white/50;
+  }
+
+  /* Decorative wordmark rendered as CSS content so assistive tech and
+     contrast audits ignore it. */
+  .footer-watermark::after {
+    content: "NEXORA";
+    display: block;
+    font-family: "Sora", "Noto Sans Devanagari", system-ui, sans-serif;
+    font-size: clamp(4rem, 16vw, 15rem);
+    font-weight: 700;
+    line-height: 0.8;
+    letter-spacing: 0.05em;
+    text-align: center;
+    white-space: nowrap;
+    color: rgba(255, 255, 255, 0.035);
+  }
+
+  .noise {
+    position: relative;
+    isolation: isolate;
+  }
+  .noise::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0.35;
+    mix-blend-mode: overlay;
+    border-radius: inherit;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+  }
+
+  .grid-lines {
+    background-image:
+      linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+
+  .text-glow {
+    text-shadow: 0 0 48px rgba(168, 85, 247, 0.35);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .mask-fade-x {
+    mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
+  }
+
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

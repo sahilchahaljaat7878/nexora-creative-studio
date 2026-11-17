@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="950" viewBox="0 0 1440 950" role="img">
+<defs>
+      <linearGradient id="bg-web1" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#0B0B14" /><stop offset="1" stop-color="#07070D" />
+      </linearGradient>
+      <radialGradient id="glow-web1" cx="50%" cy="50%" r="50%">
+        <stop offset="0" stop-color="#8B5CF6" stop-opacity="0.5" /><stop offset="1" stop-color="#8B5CF6" stop-opacity="0" />
+      </radialGradient>
+      <linearGradient id="orb-web1" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#C4B5FD" /><stop offset="0.5" stop-color="#A855F7" /><stop offset="1" stop-color="#312E81" />
+      </linearGradient>
+      <linearGradient id="card-web1" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#1A1430" /><stop offset="1" stop-color="#0C0918" />
+      </linearGradient>
+      <filter id="blur-web1"><feGaussianBlur stdDeviation="55" /></filter>
+      <filter id="grain-web1" x="0" y="0" width="100%" height="100%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch" />
+        <feColorMatrix type="saturate" values="0" />
+        <feComponentTransfer><feFuncA type="linear" slope="0.3" /></feComponentTransfer>
+      </filter>
+    </defs>
+    <rect width="1440" height="950" fill="#05050A" />
+    <rect x="60" y="48" width="1320" height="854" rx="18" fill="url(#bg-web1)" stroke="#FFFFFF" stroke-opacity="0.12" />
+    <rect x="60" y="48" width="1320" height="46" rx="18" fill="#12121C" />
+    <rect x="60" y="76" width="1320" height="18" fill="#12121C" />
+    <circle cx="88" cy="71" r="5" fill="#F87171" /><circle cx="106" cy="71" r="5" fill="#FBBF24" /><circle cx="124" cy="71" r="5" fill="#34D399" />
+    <rect x="540" y="61" width="360" height="20" rx="10" fill="#FFFFFF" opacity="0.06" />
+    <text x="720" y="75" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" letter-spacing="2" fill="#A1A1AA" text-anchor="middle">lumen.studio</text>
+    <g>
+      <circle cx="1070" cy="330" r="300" fill="url(#glow-web1)" filter="url(#blur-web1)" />
+      <circle cx="1120" cy="320" r="190" fill="url(#orb-web1)" opacity="0.9" />
+      <circle cx="1120" cy="320" r="190" fill="none" stroke="#FFFFFF" stroke-opacity="0.2" />
+      <ellipse cx="1120" cy="320" rx="250" ry="80" fill="none" stroke="#A855F7" stroke-opacity="0.5" transform="rotate(-18 1120 320)" />
+      <ellipse cx="1120" cy="320" rx="300" ry="60" fill="none" stroke="#22D3EE" stroke-opacity="0.2" transform="rotate(14 1120 320)" />
+      <circle cx="1300" cy="190" r="5" fill="#FFFFFF" opacity="0.8" />
+      <circle cx="940" cy="460" r="3" fill="#22D3EE" />
+    </g>
+    <g>
+      <circle cx="140" cy="150" r="12" fill="#A855F7" />
+      <text x="162" y="156" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="4" fill="#FFFFFF">LUMEN</text>
+      <text x="470" y="156" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" letter-spacing="2" fill="#A1A1AA">WORK</text>
+      <text x="530" y="156" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" letter-spacing="2" fill="#A1A1AA">STUDIO</text>
+      <text x="596" y="156" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" letter-spacing="2" fill="#A1A1AA">CONTACT</text>
+      <rect x="1240" y="136" width="100" height="32" rx="16" fill="none" stroke="#FFFFFF" stroke-opacity="0.25" />
+      <text x="1290" y="156" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" letter-spacing="2" fill="#FFFFFF" text-anchor="middle">START ↗</text>
+      <rect x="120" y="196" width="196" height="28" rx="14" fill="#FFFFFF" opacity="0.05" />
+      <text x="218" y="214" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" letter-spacing="3" fill="#A855F7" text-anchor="middle">DIGITAL DESIGN STUDIO</text>
+      <text x="118" y="310" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="80" font-weight="700" letter-spacing="-3" fill="#FFFFFF">Design</text>
+      <text x="118" y="388" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="80" font-weight="700" letter-spacing="-3" fill="#FFFFFF">that<tspan fill="#A855F7"> moves.</tspan></text>
+      <rect x="120" y="432" width="360" height="9" rx="4" fill="#FFFFFF" opacity="0.14" />
+      <rect x="120" y="452" width="290" height="9" rx="4" fill="#FFFFFF" opacity="0.09" />
+      <rect x="120" y="504" width="150" height="42" rx="21" fill="#A855F7" />
+      <text x="195" y="530" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1" fill="#0A0712" text-anchor="middle">VIEW WORK</text>
+      <text x="292" y="530" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" letter-spacing="2" fill="#A1A1AA">SHOWREEL ↗</text>
+    </g>
+    <g>
+      <rect x="120" y="640" width="356" height="200" rx="14" fill="url(#card-web1)" stroke="#FFFFFF" stroke-opacity="0.08" />
+      <rect x="140" y="660" width="316" height="110" rx="8" fill="#8B5CF6" opacity="0.22" />
+      <circle cx="230" cy="715" r="26" fill="#A855F7" opacity="0.7" />
+      <text x="140" y="800" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Aurora — Identity</text>
+      <text x="140" y="820" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" letter-spacing="2" fill="#A1A1AA">BRANDING / 2026</text>
+      <rect x="500" y="640" width="356" height="200" rx="14" fill="url(#card-web1)" stroke="#FFFFFF" stroke-opacity="0.08" />
+      <rect x="520" y="660" width="316" height="110" rx="8" fill="#22D3EE" opacity="0.12" />
+      <path d="M600 745 L700 690 L800 745" stroke="#22D3EE" stroke-width="1.5" fill="none" opacity="0.6" />
+      <text x="520" y="800" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Orbit — Motion</text>
+      <text x="520" y="820" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" letter-spacing="2" fill="#A1A1AA">AI FILM / 2026</text>
+      <rect x="880" y="640" width="356" height="200" rx="14" fill="url(#card-web1)" stroke="#FFFFFF" stroke-opacity="0.08" />
+      <rect x="900" y="660" width="316" height="110" rx="8" fill="#EC4899" opacity="0.14" />
+      <text x="1058" y="726" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="44" font-weight="700" fill="#FFFFFF" opacity="0.7" text-anchor="middle">Aa</text>
+      <text x="900" y="800" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Monogram — Type</text>
+      <text x="900" y="820" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" letter-spacing="2" fill="#A1A1AA">GRAPHIC DESIGN / 2026</text>
+    </g>
+    <rect width="1440" height="950" filter="url(#grain-web1)" opacity="0.2" style="mix-blend-mode:overlay" />
+  
+</svg>

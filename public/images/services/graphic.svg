@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="750" viewBox="0 0 1000 750" role="img">
+<defs>
+      <linearGradient id="bg-svc6" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#140C27" /><stop offset="0.55" stop-color="#0B0814" /><stop offset="1" stop-color="#08080D" />
+      </linearGradient>
+      <radialGradient id="glow-svc6" cx="50%" cy="50%" r="50%">
+        <stop offset="0" stop-color="#34D399" stop-opacity="0.35" /><stop offset="1" stop-color="#34D399" stop-opacity="0" />
+      </radialGradient>
+      <filter id="blur-svc6"><feGaussianBlur stdDeviation="55" /></filter>
+      <filter id="grain-svc6" x="0" y="0" width="100%" height="100%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch" />
+        <feColorMatrix type="saturate" values="0" />
+        <feComponentTransfer><feFuncA type="linear" slope="0.3" /></feComponentTransfer>
+      </filter>
+    </defs>
+    <rect width="1000" height="750" fill="url(#bg-svc6)" />
+    <circle cx="730" cy="340" r="340" fill="url(#glow-svc6)" filter="url(#blur-svc6)" />
+    <g opacity="0.18" stroke="#FFFFFF">
+      <path d="M0 150 H1000" /><path d="M0 300 H1000" /><path d="M0 450 H1000" /><path d="M0 600 H1000" />
+      <path d="M200 0 V750" /><path d="M400 0 V750" /><path d="M600 0 V750" /><path d="M800 0 V750" />
+    </g>
+    <circle cx="720" cy="380" r="140" fill="#0D0A16" stroke="#34D399" stroke-opacity="0.5" />
+      <path d="M675 445 V315 L765 445 V315" stroke="#FFFFFF" stroke-width="18" fill="none" />
+      <circle cx="765" cy="298" r="9" fill="#34D399" />
+      <rect x="500" y="580" width="80" height="56" rx="4" fill="#34D399" />
+      <rect x="596" y="580" width="80" height="56" rx="4" fill="#6366F1" />
+      <rect x="692" y="580" width="80" height="56" rx="4" fill="#11111B" stroke="#FFFFFF" stroke-opacity="0.2" />
+      <rect x="788" y="580" width="80" height="56" rx="4" fill="#F4F0E8" />
+    <text x="56" y="96" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" letter-spacing="5" fill="#FFFFFF" opacity="0.65">SERVICE 06 — IDENTITY</text>
+    <text x="56" y="664" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="44" font-weight="700" letter-spacing="-1" fill="#FFFFFF">Graphic Design</text>
+    <rect x="56" y="692" width="56" height="3" rx="1.5" fill="#34D399" />
+    <rect x="24" y="24" width="952" height="702" fill="none" stroke="#FFFFFF" stroke-opacity="0.1" />
+    <rect width="1000" height="750" filter="url(#grain-svc6)" opacity="0.22" style="mix-blend-mode:overlay" />
+  
+</svg>

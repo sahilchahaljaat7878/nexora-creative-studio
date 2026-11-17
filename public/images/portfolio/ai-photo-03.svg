@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000" role="img">
+<defs>
+      <linearGradient id="bg-ai3" x1="0" y1="0" x2="0.6" y2="1">
+        <stop offset="0" stop-color="#1B0A16" />
+        <stop offset="1" stop-color="#0B050B" />
+      </linearGradient>
+      <radialGradient id="glowA-ai3" cx="50%" cy="50%" r="50%">
+        <stop offset="0" stop-color="#F59E0B" stop-opacity="0.55" />
+        <stop offset="1" stop-color="#F59E0B" stop-opacity="0" />
+      </radialGradient>
+      <radialGradient id="glowB-ai3" cx="50%" cy="50%" r="50%">
+        <stop offset="0" stop-color="#EC4899" stop-opacity="0.4" />
+        <stop offset="1" stop-color="#EC4899" stop-opacity="0" />
+      </radialGradient>
+      <linearGradient id="fig-ai3" x1="0.1" y1="0" x2="0.9" y2="1">
+        <stop offset="0" stop-color="#251538" />
+        <stop offset="0.5" stop-color="#130B20" />
+        <stop offset="1" stop-color="#08050E" />
+      </linearGradient>
+      <linearGradient id="rim-ai3" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#F59E0B" stop-opacity="0" />
+        <stop offset="0.35" stop-color="#EC4899" stop-opacity="0.95" />
+        <stop offset="0.75" stop-color="#F59E0B" stop-opacity="0.8" />
+        <stop offset="1" stop-color="#6366F1" stop-opacity="0" />
+      </linearGradient>
+      <linearGradient id="beam-ai3" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.16" />
+        <stop offset="1" stop-color="#FFFFFF" stop-opacity="0" />
+      </linearGradient>
+      <filter id="blur-ai3"><feGaussianBlur stdDeviation="55" /></filter>
+      <filter id="soft-ai3"><feGaussianBlur stdDeviation="14" /></filter>
+      <filter id="grain-ai3" x="0" y="0" width="100%" height="100%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch" />
+        <feColorMatrix type="saturate" values="0" />
+        <feComponentTransfer><feFuncA type="linear" slope="0.5" /></feComponentTransfer>
+      </filter>
+    </defs>
+
+    <rect width="800" height="1000" fill="url(#bg-ai3)" />
+    <ellipse cx="590" cy="270" rx="330" ry="330" fill="url(#glowA-ai3)" filter="url(#blur-ai3)" />
+    <ellipse cx="180" cy="720" rx="300" ry="300" fill="url(#glowB-ai3)" filter="url(#blur-ai3)" />
+
+    <g opacity="0.5">
+      <circle cx="400" cy="470" r="300" stroke="#FFFFFF" stroke-opacity="0.08" fill="none" />
+      <circle cx="400" cy="470" r="360" stroke="#FFFFFF" stroke-opacity="0.05" fill="none" />
+      <ellipse cx="400" cy="470" rx="390" ry="120" stroke="#F59E0B" stroke-opacity="0.18" fill="none" transform="rotate(-18 400 470)" />
+      <ellipse cx="400" cy="470" rx="390" ry="120" stroke="#EC4899" stroke-opacity="0.12" fill="none" transform="rotate(24 400 470)" />
+    </g>
+
+    <rect x="560" y="120" width="150" height="620" fill="url(#beam-ai3)" transform="rotate(18 635 430)" opacity="0.5" filter="url(#soft-ai3)" />
+
+    <g>
+      <path d="M120 1000 C140 826 248 736 400 736 C552 736 660 826 680 1000 Z" fill="url(#fig-ai3)" />
+      <path d="M348 596 L452 596 L452 716 L400 752 L348 716 Z" fill="#120A1D" />
+      <ellipse cx="400" cy="452" rx="146" ry="196" fill="url(#fig-ai3)" />
+      <path d="M254 424 C248 292 318 236 400 236 C482 236 552 292 546 424 C520 334 470 296 400 296 C330 296 280 334 254 424 Z" fill="#0B0713" />
+      <path d="M504 286 C552 356 558 452 526 540 C508 588 484 620 452 646" stroke="url(#rim-ai3)" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.9" />
+      <path d="M536 790 C606 838 654 910 672 1000" stroke="url(#rim-ai3)" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.45" />
+      <path d="M352 610 C374 626 426 626 448 610" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="2" fill="none" />
+      <ellipse cx="336" cy="500" rx="18" ry="34" fill="#FFFFFF" opacity="0.05" filter="url(#soft-ai3)" />
+    </g>
+
+    <g opacity="0.8">
+      <circle cx="612" cy="196" r="3" fill="#EC4899" />
+      <circle cx="660" cy="236" r="1.6" fill="#FFFFFF" opacity="0.6" />
+      <circle cx="196" cy="300" r="2" fill="#F59E0B" />
+      <circle cx="228" cy="640" r="1.5" fill="#FFFFFF" opacity="0.4" />
+    </g>
+
+    <rect x="26" y="26" width="748" height="948" rx="4" fill="none" stroke="#FFFFFF" stroke-opacity="0.1" />
+    <g>
+      <text x="52" y="86" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" letter-spacing="5" fill="#FFFFFF" opacity="0.7">NEXORA — AI STUDY</text>
+      <text x="52" y="920" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="12" letter-spacing="4" fill="#A1A1AA">GENERATIVE PORTRAIT</text>
+      <text x="52" y="956" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="38" font-weight="700" letter-spacing="1" fill="#FFFFFF">VELVET</text>
+      <text x="748" y="956" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="12" letter-spacing="4" fill="#F59E0B" text-anchor="end">03</text>
+    </g>
+
+    <rect width="800" height="1000" filter="url(#grain-ai3)" opacity="0.3" style="mix-blend-mode:overlay" />
+    <rect width="800" height="1000" fill="url(#bg-ai3)" opacity="0.05" />
+  
+</svg>

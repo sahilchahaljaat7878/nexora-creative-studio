@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img">
+<defs>
+      <linearGradient id="bg-yt2" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#0A0D18" /><stop offset="0.5" stop-color="#0F0B1C" /><stop offset="1" stop-color="#08080D" />
+      </linearGradient>
+      <radialGradient id="glow-yt2" cx="50%" cy="50%" r="50%">
+        <stop offset="0" stop-color="#22D3EE" stop-opacity="0.35" /><stop offset="1" stop-color="#22D3EE" stop-opacity="0" />
+      </radialGradient>
+      <linearGradient id="line-yt2" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="#22D3EE" /><stop offset="1" stop-color="#8B5CF6" stop-opacity="0" />
+      </linearGradient>
+      <filter id="blur-yt2"><feGaussianBlur stdDeviation="55" /></filter>
+      <filter id="grain-yt2" x="0" y="0" width="100%" height="100%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch" />
+        <feColorMatrix type="saturate" values="0" />
+        <feComponentTransfer><feFuncA type="linear" slope="0.35" /></feComponentTransfer>
+      </filter>
+    </defs>
+    <rect width="1280" height="720" fill="url(#bg-yt2)" />
+    <circle cx="1010" cy="250" r="300" fill="url(#glow-yt2)" filter="url(#blur-yt2)" />
+    <g opacity="0.16" stroke="#FFFFFF">
+      <path d="M80 120 H1200" /><path d="M80 600 H1200" />
+      <path d="M1120 100 V620" /><path d="M120 100 V620" />
+    </g>
+    <text x="80" y="126" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="12" letter-spacing="7" fill="#22D3EE">NEXORA STUDIO — CHANNEL ART</text>
+    <text x="76" y="368" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="120" font-weight="300" letter-spacing="4" fill="#FFFFFF">STUDIO</text>
+    <text x="76" y="520" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="150" font-weight="800" letter-spacing="-2" fill="#FFFFFF">DIARIES</text>
+    <rect x="80" y="552" width="560" height="2" fill="url(#line-yt2)" />
+    <text x="80" y="604" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="16" letter-spacing="5" fill="#A1A1AA">PROCESS · DESIGN · BEHIND THE SCENES</text>
+    <g transform="translate(1000 380)">
+      <circle r="130" fill="none" stroke="#22D3EE" stroke-opacity="0.5" />
+      <circle r="86" fill="none" stroke="#FFFFFF" stroke-opacity="0.2" />
+      <circle r="42" fill="#22D3EE" opacity="0.14" />
+      <path d="M-22 -30 L44 0 L-22 30 Z" fill="#FFFFFF" opacity="0.9" />
+      <circle cx="160" cy="-140" r="6" fill="#8B5CF6" />
+      <circle cx="-150" cy="120" r="4" fill="#22D3EE" />
+    </g>
+    <g>
+      <rect x="80" y="646" width="34" height="34" rx="17" fill="#8B5CF6" />
+      <text x="97" y="669" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="800" fill="#07060D" text-anchor="middle">N</text>
+      <text x="126" y="668" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" letter-spacing="3" fill="#FFFFFF" opacity="0.8">@NEXORASTUDIO</text>
+    </g>
+    <rect x="24" y="24" width="1232" height="672" fill="none" stroke="#FFFFFF" stroke-opacity="0.1" />
+    <rect width="1280" height="720" filter="url(#grain-yt2)" opacity="0.2" style="mix-blend-mode:overlay" />
+  
+</svg>
