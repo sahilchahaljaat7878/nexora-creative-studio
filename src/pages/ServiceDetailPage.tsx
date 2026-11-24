@@ -1,5 +1,5 @@
 import { useNavigate, useParams } from "react-router-dom";
-import { ArrowRight, Check, Info, MessageCircle, Sparkles } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Check, Info, MessageCircle, Sparkles } from "lucide-react";
 import { CTASection } from "@/components/CTASection";
 import { PortfolioGallery } from "@/components/PortfolioGallery";
 import { PricingCard } from "@/components/PricingCard";
@@ -73,6 +73,17 @@ function ServiceDetailContent({ service }: { service: Service }) {
         <ButtonLink to={orderLink(service.id)} withArrow>
           {t("common.orderNow")}
         </ButtonLink>
+        {service.liveUrl && (
+          <a
+            href={service.liveUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex h-12 items-center gap-2 rounded-full border border-cyan-300/30 bg-cyan-500/10 px-6 text-sm font-semibold text-cyan-100 transition-all hover:border-cyan-300/50 hover:bg-cyan-500/20"
+          >
+            {t("common.viewLiveSite")}
+            <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+          </a>
+        )}
         <button
           type="button"
           onClick={handleWhatsApp}

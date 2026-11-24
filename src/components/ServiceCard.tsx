@@ -158,6 +158,18 @@ export function ServiceCard({ service, index, className }: ServiceCardProps) {
           </div>
         )}
 
+        {service.liveUrl && (
+          <a
+            href={service.liveUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-full border border-cyan-300/30 bg-cyan-500/10 px-4 py-2 text-xs font-semibold text-cyan-100 transition-colors hover:border-cyan-300/50 hover:bg-cyan-500/20"
+          >
+            {t("common.viewLiveSite")}
+            <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
+          </a>
+        )}
+
         <div className="mt-4 grid grid-cols-2 gap-2">
           <ButtonLink to={detailPath} variant="secondary" size="sm" className="px-2 text-xs">
             {t("common.viewDetails")}

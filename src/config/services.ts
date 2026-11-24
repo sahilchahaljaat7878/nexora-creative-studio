@@ -36,6 +36,8 @@ export interface Service {
   imageAlt: Localized;
   /** Optional looping video used as the card hero (e.g. AI Video Creation). */
   video?: string;
+  /** Optional live demo URL shown as a "View live site" link (e.g. Website Development). */
+  liveUrl?: string;
   icon: ServiceIcon;
   accent: {
     card: string;
@@ -642,6 +644,7 @@ export const services: Service[] = [
       en: "Modern dark website mockup displayed on desktop and mobile",
       hi: "डेस्कटॉप और मोबाइल पर दिखाया गया आधुनिक डार्क वेबसाइट मॉकअप",
     },
+    liveUrl: "https://run-ram.web.app/",
     icon: "globe",
     accent: {
       card: "from-cyan-500/20 via-blue-500/10 to-transparent",

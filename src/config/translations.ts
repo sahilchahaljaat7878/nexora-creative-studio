@@ -25,6 +25,7 @@ export const en = {
 
   /* ---------------- Common ---------------- */
   "common.viewDetails": "View Details",
+  "common.viewLiveSite": "View live site",
   "common.orderNow": "Order Now",
   "common.exploreServices": "Explore Services",
   "common.startProject": "Start Your Project",
@@ -526,6 +527,7 @@ export const hi: Record<TranslationKey, string> = {
 
   /* ---------------- Common ---------------- */
   "common.viewDetails": "विवरण देखें",
+  "common.viewLiveSite": "लाइव साइट देखें",
   "common.orderNow": "अभी ऑर्डर करें",
   "common.exploreServices": "सेवाएँ देखें",
   "common.startProject": "अपना प्रोजेक्ट शुरू करें",
