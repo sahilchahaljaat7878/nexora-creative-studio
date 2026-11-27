@@ -1,5 +1,5 @@
 /**
- * Asset generator for Nexora Creative Studio.
+ * Asset generator for Haryana Creative.
  * Creates the custom SVG artwork used across the site, plus PNG favicons
  * and the Open Graph image via sharp.
  *
@@ -159,7 +159,7 @@ function aiPortrait({ id, a = C.violet, b = C.pink, label = "NEON STUDY", index 
 
     ${frame(800, 1000, id, 0.1)}
     <g>
-      <text x="52" y="86" font-family="${UI}" font-size="13" letter-spacing="5" fill="${C.white}" opacity="0.7">NEXORA — AI STUDY</text>
+      <text x="52" y="86" font-family="${UI}" font-size="13" letter-spacing="5" fill="${C.white}" opacity="0.7">HARYANA — AI STUDY</text>
       <text x="52" y="920" font-family="${UI}" font-size="12" letter-spacing="4" fill="${C.muted}">GENERATIVE PORTRAIT</text>
       <text x="52" y="956" font-family="${UI}" font-size="38" font-weight="700" letter-spacing="1" fill="${C.white}">${esc(label)}</text>
       <text x="748" y="956" font-family="${UI}" font-size="12" letter-spacing="4" fill="${a}" text-anchor="end">${esc(index)}</text>
@@ -231,7 +231,7 @@ function productVisual() {
       <circle cx="560" cy="180" r="1.5" fill="${C.pink}" />
     </g>
     ${frame(800, 1000, id)}
-    <text x="52" y="86" font-family="${UI}" font-size="13" letter-spacing="5" fill="${C.white}" opacity="0.7">NEXORA — AI STUDY</text>
+    <text x="52" y="86" font-family="${UI}" font-size="13" letter-spacing="5" fill="${C.white}" opacity="0.7">HARYANA — AI STUDY</text>
     <text x="52" y="920" font-family="${UI}" font-size="12" letter-spacing="4" fill="${C.muted}">PRODUCT LIGHTING</text>
     <text x="52" y="956" font-family="${UI}" font-size="38" font-weight="700" letter-spacing="1" fill="${C.white}">AURORA</text>
     <text x="748" y="956" font-family="${UI}" font-size="12" letter-spacing="4" fill="${C.violet}" text-anchor="end">02</text>
@@ -292,7 +292,7 @@ function cinematic({ id, title, subtitle, timecode, palette }) {
     <rect width="1600" height="64" fill="#05050A" />
     <rect y="836" width="1600" height="64" fill="#05050A" />
     <g>
-      <text x="84" y="758" font-family="${UI}" font-size="15" letter-spacing="8" fill="${C.white}" opacity="0.65">NEXORA — AI FILM</text>
+      <text x="84" y="758" font-family="${UI}" font-size="15" letter-spacing="8" fill="${C.white}" opacity="0.65">HARYANA — AI FILM</text>
       <text x="84" y="806" font-family="${UI}" font-size="76" font-weight="700" letter-spacing="4" fill="${C.white}">${esc(title)}</text>
       <text x="1516" y="806" font-family="${UI}" font-size="15" letter-spacing="4" fill="${C.muted}" text-anchor="end">${esc(timecode)}</text>
     </g>
@@ -407,7 +407,7 @@ function launchBanner() {
       <circle cx="930" cy="390" r="340" fill="none" />
     </g>
     <g>
-      <text x="84" y="104" font-family="${UI}" font-size="13" letter-spacing="6" fill="${C.white}" opacity="0.72">NEXORA — CAMPAIGN 01</text>
+      <text x="84" y="104" font-family="${UI}" font-size="13" letter-spacing="6" fill="${C.white}" opacity="0.72">HARYANA — CAMPAIGN 01</text>
       <text x="80" y="330" font-family="${UI}" font-size="158" font-weight="800" letter-spacing="-6" fill="${C.white}">LAUNCH</text>
       <text x="80" y="470" font-family="${UI}" font-size="158" font-weight="300" letter-spacing="18" fill="${C.cyan}">WEEK</text>
       <rect x="84" y="530" width="420" height="1" fill="${C.white}" opacity="0.24" />
@@ -471,7 +471,7 @@ function youtubeThumb() {
     <g>
       <rect x="76" y="618" width="42" height="42" rx="21" fill="${C.violet}" />
       <text x="97" y="646" font-family="${UI}" font-size="17" font-weight="800" fill="#0B0612" text-anchor="middle">N</text>
-      <text x="132" y="634" font-family="${UI}" font-size="13" font-weight="700" letter-spacing="2" fill="${C.white}">NEXORA STUDIO</text>
+      <text x="132" y="634" font-family="${UI}" font-size="13" font-weight="700" letter-spacing="2" fill="${C.white}">HARYANA STUDIO</text>
       <text x="132" y="650" font-family="${UI}" font-size="10" letter-spacing="2" fill="${C.muted}">CREATIVE DIGITAL SOLUTIONS</text>
     </g>
     <rect x="1190" y="606" width="40" height="42" rx="6" fill="none" stroke="${C.white}" stroke-opacity="0.4" />
@@ -513,7 +513,7 @@ function youtubeChannel() {
       <path d="M80 120 H1200" /><path d="M80 600 H1200" />
       <path d="M1120 100 V620" /><path d="M120 100 V620" />
     </g>
-    <text x="80" y="126" font-family="${UI}" font-size="12" letter-spacing="7" fill="${C.cyan}">NEXORA STUDIO — CHANNEL ART</text>
+    <text x="80" y="126" font-family="${UI}" font-size="12" letter-spacing="7" fill="${C.cyan}">HARYANA STUDIO — CHANNEL ART</text>
     <text x="76" y="368" font-family="${UI}" font-size="120" font-weight="300" letter-spacing="4" fill="${C.white}">STUDIO</text>
     <text x="76" y="520" font-family="${UI}" font-size="150" font-weight="800" letter-spacing="-2" fill="${C.white}">DIARIES</text>
     <rect x="80" y="552" width="560" height="2" fill="url(#line-${id})" />
@@ -529,7 +529,7 @@ function youtubeChannel() {
     <g>
       <rect x="80" y="646" width="34" height="34" rx="17" fill="${C.purple}" />
       <text x="97" y="669" font-family="${UI}" font-size="14" font-weight="800" fill="#07060D" text-anchor="middle">N</text>
-      <text x="126" y="668" font-family="${UI}" font-size="13" letter-spacing="3" fill="${C.white}" opacity="0.8">@NEXORASTUDIO</text>
+      <text x="126" y="668" font-family="${UI}" font-size="13" letter-spacing="3" fill="${C.white}" opacity="0.8">@HARYANASTUDIO</text>
     </g>
     <rect x="24" y="24" width="1232" height="672" fill="none" stroke="${C.white}" stroke-opacity="0.1" />
     <rect width="1280" height="720" filter="url(#grain-${id})" opacity="0.2" style="mix-blend-mode:overlay" />
@@ -954,7 +954,7 @@ function studioCollage() {
       <circle cx="960" cy="620" r="14" fill="none" stroke="${C.white}" stroke-opacity="0.4" />
       <circle cx="960" cy="620" r="3" fill="${C.violet}" />
       <circle cx="240" cy="790" r="4" fill="${C.cyan}" opacity="0.8" />
-      <text x="90" y="800" font-family="${UI}" font-size="11" letter-spacing="5" fill="${C.white}" opacity="0.45">NEXORA — CREATIVE STUDIO</text>
+      <text x="90" y="800" font-family="${UI}" font-size="11" letter-spacing="5" fill="${C.white}" opacity="0.45">HARYANA — CREATIVE STUDIO</text>
     </g>
     <rect x="32" y="32" width="1136" height="836" fill="none" stroke="${C.white}" stroke-opacity="0.08" />
     <rect width="1200" height="900" filter="url(#grain-${id})" opacity="0.2" style="mix-blend-mode:overlay" />
@@ -1092,13 +1092,13 @@ function ogImage() {
       <path d="M15 41 V16 L41 41 V16" fill="none" stroke="url(#mark)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
       <circle cx="41" cy="13" r="3" fill="#E9D5FF" />
     </g>
-    <text x="80" y="270" font-family="${UI}" font-size="92" font-weight="800" letter-spacing="10" fill="${C.white}">NEXORA</text>
+    <text x="80" y="270" font-family="${UI}" font-size="92" font-weight="800" letter-spacing="10" fill="${C.white}">HARYANA</text>
     <text x="84" y="310" font-family="${UI}" font-size="17" font-weight="500" letter-spacing="10" fill="${C.violet}">CREATIVE STUDIO</text>
     <line x1="84" y1="356" x2="560" y2="356" stroke="${C.white}" stroke-opacity="0.16" />
     <text x="84" y="414" font-family="${UI}" font-size="28" font-weight="600" letter-spacing="3" fill="${C.white}" opacity="0.9">CREATE. DESIGN. INSPIRE.</text>
     <text x="84" y="456" font-family="${UI}" font-size="16" letter-spacing="1" fill="${C.muted}">AI visuals · Motion · Design · Websites</text>
     <text x="84" y="566" font-family="${UI}" font-size="13" letter-spacing="4" fill="${C.muted}">FOUNDED BY SAHIL</text>
-    <text x="1120" y="566" font-family="${UI}" font-size="13" letter-spacing="4" fill="${C.muted}" text-anchor="end">NEXORA CREATIVE STUDIO</text>
+    <text x="1120" y="566" font-family="${UI}" font-size="13" letter-spacing="4" fill="${C.muted}" text-anchor="end">HARYANA CREATIVE STUDIO</text>
     <rect width="1200" height="630" filter="url(#grain)" opacity="0.25" style="mix-blend-mode:overlay" />
   `
   );

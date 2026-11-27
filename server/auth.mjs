@@ -13,7 +13,7 @@ import { fileURLToPath } from "node:url";
 const here = path.dirname(fileURLToPath(import.meta.url));
 const AUTH_FILE = path.join(here, "data", "auth.json");
 
-export const SESSION_COOKIE = "nexora_admin";
+export const SESSION_COOKIE = "haryana_admin";
 export const SESSION_TTL_MS = 8 * 60 * 60 * 1000; // 8 hours
 
 const KEY_LENGTH = 64;

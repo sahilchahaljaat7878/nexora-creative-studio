@@ -103,7 +103,7 @@ export const faqs: FaqItem[] = [
   {
     id: "contact",
     question: {
-      en: "How can I contact Nexora?",
+      en: "How can I contact Haryana?",
       hi: "मैं नेक्सोरा से कैसे संपर्क कर सकता/सकती हूँ?",
     },
     answer: {

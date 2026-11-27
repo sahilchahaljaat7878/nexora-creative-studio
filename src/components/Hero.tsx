@@ -168,7 +168,7 @@ export function Hero() {
                       {t("home.visualCaption")}
                     </span>
                     <span className="font-mono text-[8px] uppercase tracking-[0.2em] text-white/55">
-                      NEXORA / 26
+                      HARYANA / 26
                     </span>
                   </div>
                 </div>
@@ -197,7 +197,7 @@ export function Hero() {
                       {t(card.key)}
                     </p>
                     <p className="mt-1.5 font-mono text-[7px] uppercase tracking-[0.18em] text-white/55">
-                      Nexora Studio
+                      Haryana Studio
                     </p>
                   </div>
                 </div>

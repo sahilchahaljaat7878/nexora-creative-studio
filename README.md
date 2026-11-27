@@ -1,6 +1,6 @@
-# Nexora Creative Studio
+# Haryana Creative
 
-A premium, bilingual (English / हिन्दी) website for **Nexora Creative Studio**, founded by **Sahil**.
+A premium, bilingual (English / हिन्दी) website for **Haryana Creative**, founded by **Sahil**.
 
 Built with React, Vite, TypeScript, Tailwind CSS, Framer Motion, React Router, React Hook Form and Zod.
 
@@ -213,7 +213,7 @@ Add URLs in `src/config/social.ts`. Only configured links are rendered, so there
 
 - English is the default; visitors can switch to Hindi with `EN | हिन्दी`.
 - The switcher is in the header on every breakpoint (and again inside the mobile menu).
-- The choice is stored in `localStorage` (`nexora-language`) and persists across navigation and reloads.
+- The choice is stored in `localStorage` (`haryana-language`) and persists across navigation and reloads.
 - All UI strings live in `src/config/translations.ts`. The Hindi dictionary is typed against the English keys, so a missing translation causes a TypeScript error.
 - Service, pricing, FAQ, legal and portfolio copy is localized in their own config files.
 

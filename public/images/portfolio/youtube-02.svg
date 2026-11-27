@@ -22,7 +22,7 @@
       <path d="M80 120 H1200" /><path d="M80 600 H1200" />
       <path d="M1120 100 V620" /><path d="M120 100 V620" />
     </g>
-    <text x="80" y="126" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="12" letter-spacing="7" fill="#22D3EE">NEXORA STUDIO — CHANNEL ART</text>
+    <text x="80" y="126" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="12" letter-spacing="7" fill="#22D3EE">HARYANA STUDIO — CHANNEL ART</text>
     <text x="76" y="368" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="120" font-weight="300" letter-spacing="4" fill="#FFFFFF">STUDIO</text>
     <text x="76" y="520" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="150" font-weight="800" letter-spacing="-2" fill="#FFFFFF">DIARIES</text>
     <rect x="80" y="552" width="560" height="2" fill="url(#line-yt2)" />
@@ -38,7 +38,7 @@
     <g>
       <rect x="80" y="646" width="34" height="34" rx="17" fill="#8B5CF6" />
       <text x="97" y="669" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="800" fill="#07060D" text-anchor="middle">N</text>
-      <text x="126" y="668" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" letter-spacing="3" fill="#FFFFFF" opacity="0.8">@NEXORASTUDIO</text>
+      <text x="126" y="668" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" letter-spacing="3" fill="#FFFFFF" opacity="0.8">@HARYANASTUDIO</text>
     </g>
     <rect x="24" y="24" width="1232" height="672" fill="none" stroke="#FFFFFF" stroke-opacity="0.1" />
     <rect width="1280" height="720" filter="url(#grain-yt2)" opacity="0.2" style="mix-blend-mode:overlay" />

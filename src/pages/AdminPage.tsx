@@ -70,7 +70,7 @@ function formatDate(value?: string) {
 
 export default function AdminPage() {
   useSeo({
-    title: "Studio Admin — Nexora Creative Studio",
+    title: "Studio Admin — Haryana Creative",
     description: "Private studio dashboard for orders, enquiries and payments.",
     path: "/admin",
     noindex: true,
@@ -382,7 +382,7 @@ export default function AdminPage() {
         <header className="flex flex-wrap items-center justify-between gap-4">
           <div>
             <p className="font-mono text-[9px] uppercase tracking-[0.3em] text-violet-300/80">
-              Nexora Creative Studio
+              Haryana Creative
             </p>
             <h1 className="mt-1 font-display text-2xl font-semibold tracking-tight text-white sm:text-3xl">
               Studio Admin

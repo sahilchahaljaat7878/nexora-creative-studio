@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { brand } from "@/config/brand";
 import { cn } from "@/lib/utils";
 
-/** Abstract N mark, unique to Nexora Creative Studio. */
+/** Abstract N mark, unique to Haryana Creative. */
 export function LogoMark({
   className,
   plain = false,
@@ -12,14 +12,14 @@ export function LogoMark({
   plain?: boolean;
 }) {
   const rawId = useId().replace(/[:]/g, "");
-  const gradientId = `nexora-mark-${rawId}`;
+  const gradientId = `haryana-mark-${rawId}`;
 
   return (
     <svg
       viewBox="0 0 64 64"
       className={cn("shrink-0", className)}
       role="img"
-      aria-label="Nexora Creative Studio logo"
+      aria-label="Haryana Creative logo"
     >
       <defs>
         <linearGradient id={gradientId} x1="0" y1="0" x2="1" y2="1">

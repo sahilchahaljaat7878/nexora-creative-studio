@@ -175,7 +175,7 @@
   /* Decorative wordmark rendered as CSS content so assistive tech and
      contrast audits ignore it. */
   .footer-watermark::after {
-    content: "NEXORA";
+    content: "HARYANA";
     display: block;
     font-family: "Sora", "Noto Sans Devanagari", system-ui, sans-serif;
     font-size: clamp(4rem, 16vw, 15rem);

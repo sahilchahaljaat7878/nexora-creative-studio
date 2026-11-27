@@ -36,7 +36,7 @@ export interface InquiryDetails {
 const labels = {
   en: {
     title: "NEW PROJECT INQUIRY",
-    studio: "Nexora Creative Studio",
+    studio: "Haryana Creative",
     service: "SERVICE",
     serviceLabel: "Service",
     packageLabel: "Package",
@@ -56,7 +56,7 @@ const labels = {
     attach: "selected — I will attach this file manually in the chat",
     agreement: "I agree to the Terms & Conditions and Privacy Policy.",
     note: "Note: this is an inquiry. The project is confirmed only after the studio replies and both sides agree on scope, pricing and delivery.",
-    sentFrom: "Sent from the Nexora Creative Studio website.",
+    sentFrom: "Sent from the Haryana Creative website.",
   },
   hi: {
     title: "नई प्रोजेक्ट पूछताछ",
@@ -141,7 +141,7 @@ export interface ContactMessageDetails {
 const contactLabels = {
   en: {
     title: "NEW WEBSITE ENQUIRY",
-    studio: "Nexora Creative Studio",
+    studio: "Haryana Creative",
     name: "Name",
     whatsapp: "WhatsApp",
     email: "Email",
@@ -149,7 +149,7 @@ const contactLabels = {
     message: "Message",
     notProvided: "Not provided",
     note: "Note: this is an enquiry. A project is confirmed only after the studio replies and both sides agree on scope, pricing and delivery.",
-    sentFrom: "Sent from the Nexora Creative Studio website.",
+    sentFrom: "Sent from the Haryana Creative website.",
   },
   hi: {
     title: "नई वेबसाइट पूछताछ",

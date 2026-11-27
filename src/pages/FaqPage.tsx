@@ -25,7 +25,7 @@ export default function FaqPage() {
   useEffect(() => {
     const script = document.createElement("script");
     script.type = "application/ld+json";
-    script.id = "nexora-faq-schema";
+    script.id = "haryana-faq-schema";
     script.text = JSON.stringify({
       "@context": "https://schema.org",
       "@type": "FAQPage",
@@ -40,7 +40,7 @@ export default function FaqPage() {
     });
     document.head.appendChild(script);
     return () => {
-      document.getElementById("nexora-faq-schema")?.remove();
+      document.getElementById("haryana-faq-schema")?.remove();
     };
   }, [localizeText]);
 

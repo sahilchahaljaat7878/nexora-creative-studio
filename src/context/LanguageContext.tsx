@@ -11,7 +11,7 @@ import { dictionaries, type TranslationKey } from "@/config/translations";
 import { localize, localizeList, type Language, type LocalizedList, type LocalizedText } from "@/config/types";
 import { interpolate } from "@/lib/utils";
 
-const STORAGE_KEY = "nexora-language";
+const STORAGE_KEY = "haryana-language";
 
 interface LanguageContextValue {
   lang: Language;

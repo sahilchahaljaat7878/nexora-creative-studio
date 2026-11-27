@@ -1021,7 +1021,7 @@ export function OrderForm({ className }: OrderFormProps) {
               {t("order.summaryTitle")}
             </h2>
             <span className="font-mono text-[9px] uppercase tracking-[0.18em] text-white/50">
-              NEXORA
+              HARYANA
             </span>
           </div>
 

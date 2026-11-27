@@ -198,13 +198,13 @@ export const en = {
   "portfolio.showing": "Showing {count} of {total} projects",
 
   /* ---------------- About ---------------- */
-  "about.eyebrow": "About Nexora",
+  "about.eyebrow": "About Haryana",
   "about.title": "CREATIVITY MEETS TECHNOLOGY.",
   "about.intro":
-    "Nexora Creative Studio is a digital creative service brand founded by Sahil. Our mission is to help individuals, content creators and businesses transform their ideas into professional digital experiences through AI-powered visuals, creative video production, graphic design and modern website development.",
+    "Haryana Creative is a digital creative service brand founded by Sahil. Our mission is to help individuals, content creators and businesses transform their ideas into professional digital experiences through AI-powered visuals, creative video production, graphic design and modern website development.",
   "about.storyTitle": "The studio",
   "about.storyP1":
-    "The studio is built on a simple observation: great ideas are common, but polished execution is not. Nexora exists to close that gap - giving founders, creators and small teams access to design and production quality that usually sits behind large agency retainers.",
+    "The studio is built on a simple observation: great ideas are common, but polished execution is not. Haryana exists to close that gap - giving founders, creators and small teams access to design and production quality that usually sits behind large agency retainers.",
   "about.storyP2":
     "We work at the intersection of generative AI and hands-on design. Technology helps us move quickly; the creative direction, composition and attention to detail remain human. Every project is built around the client's message, not a template.",
   "about.missionTitle": "Our mission",
@@ -214,9 +214,9 @@ export const en = {
   "about.visionText":
     "To become a trusted creative partner for emerging brands: a studio where ambitious ideas receive the visual quality and attention they deserve, regardless of the size of the business.",
   "about.founderTitle": "Founder",
-  "about.founderRole": "Founder, Nexora Creative Studio",
+  "about.founderRole": "Founder, Haryana Creative",
   "about.founderText":
-    "Nexora Creative Studio is founded and led by Sahil. The studio is built around a hands-on approach: understanding the brief, shaping the visual direction and staying involved through delivery.",
+    "Haryana Creative is founded and led by Sahil. The studio is built around a hands-on approach: understanding the brief, shaping the visual direction and staying involved through delivery.",
   "about.approachTitle": "How we think",
   "about.approach1.title": "Design with purpose",
   "about.approach1.desc":
@@ -413,7 +413,7 @@ export const en = {
   "faq.eyebrow": "Help centre",
   "faq.title": "QUESTIONS, ANSWERED.",
   "faq.subtitle":
-    "Everything you need to know before starting a project with Nexora Creative Studio.",
+    "Everything you need to know before starting a project with Haryana Creative.",
   "faq.ctaTitle": "Still have a question?",
   "faq.ctaText":
     "Send it to us on WhatsApp and we'll answer as soon as we can.",
@@ -427,12 +427,12 @@ export const en = {
     "If anything here is unclear, contact the studio before placing an inquiry.",
   "privacy.title": "PRIVACY POLICY",
   "privacy.subtitle":
-    "How Nexora Creative Studio handles the information you share when you use this website.",
+    "How Haryana Creative handles the information you share when you use this website.",
   "privacy.notice":
-    "Nexora Creative Studio is an independent creative service brand. This website does not run its own backend database or payment system.",
+    "Haryana Creative is an independent creative service brand. This website does not run its own backend database or payment system.",
   "terms.title": "TERMS & CONDITIONS",
   "terms.subtitle":
-    "The basic terms that apply when you enquire about or order a service from Nexora Creative Studio.",
+    "The basic terms that apply when you enquire about or order a service from Haryana Creative.",
   "terms.notice":
     "These terms are a general template for the studio's services and do not replace a project-specific written agreement.",
 
@@ -444,25 +444,25 @@ export const en = {
   "footer.contact": "Contact",
   "footer.follow": "Follow",
   "footer.legal": "Legal",
-  "footer.copyright": "© {year} Nexora Creative Studio. All Rights Reserved.",
+  "footer.copyright": "© {year} Haryana Creative. All Rights Reserved.",
   "footer.backToTop": "Back to top",
   "footer.emailUnavailable": "Email unavailable",
   "footer.whatsappUnavailable": "WhatsApp unavailable",
   "footer.socialEmpty": "Social profiles coming soon.",
-  "footer.builtBy": "Designed & built by Nexora Creative Studio.",
+  "footer.builtBy": "Designed & built by Haryana Creative.",
 
   /* ---------------- WhatsApp ---------------- */
   "whatsapp.label": "Chat on WhatsApp",
-  "whatsapp.aria": "Start a WhatsApp conversation with Nexora Creative Studio",
+  "whatsapp.aria": "Start a WhatsApp conversation with Haryana Creative",
   "whatsapp.notConfiguredTitle": "WhatsApp isn't connected yet",
   "whatsapp.notConfiguredBody":
     "Direct chat isn't available right now. Please use the contact form or email the studio.",
   "whatsapp.close": "Close WhatsApp panel",
-  "whatsapp.general": "Hi Nexora Creative Studio! I'd like to know more about your services.",
+  "whatsapp.general": "Hi Haryana Creative! I'd like to know more about your services.",
   "whatsapp.serviceInquiry":
-    "Hi Nexora Creative Studio! I'm interested in {service}. Could you share the details?",
+    "Hi Haryana Creative! I'm interested in {service}. Could you share the details?",
   "whatsapp.packageInquiry":
-    "Hi Nexora Creative Studio! I'd like to order {service} — {package} ({price}). Here are my requirements:",
+    "Hi Haryana Creative! I'd like to order {service} — {package} ({price}). Here are my requirements:",
 
   /* ---------------- 404 ---------------- */
   "notFound.eyebrow": "404",
@@ -472,38 +472,38 @@ export const en = {
   "notFound.button": "Return Home",
 
   /* ---------------- SEO ---------------- */
-  "seo.home.title": "Nexora Creative Studio — Create. Design. Inspire.",
+  "seo.home.title": "Haryana Creative — Create. Design. Inspire.",
   "seo.home.desc":
     "Premium AI photos, AI videos, banner design, YouTube graphics, graphic design and modern business websites. Founded by Sahil.",
-  "seo.services.title": "Creative Services — Nexora Creative Studio",
+  "seo.services.title": "Creative Services — Haryana Creative",
   "seo.services.desc":
     "Explore AI photo creation, banner designing, YouTube graphics, AI video creation, website development and graphic design with transparent pricing.",
-  "seo.pricing.title": "Pricing — Nexora Creative Studio",
+  "seo.pricing.title": "Pricing — Haryana Creative",
   "seo.pricing.desc":
     "Clear prices for AI photos, banners, YouTube thumbnails, AI videos, websites and graphic design. Final scope and quotation confirmed after reviewing your brief.",
-  "seo.portfolio.title": "Portfolio — Nexora Creative Studio",
+  "seo.portfolio.title": "Portfolio — Haryana Creative",
   "seo.portfolio.desc":
     "A curated look at concept work across AI imagery, video, banners, YouTube graphics, websites and brand identity design.",
-  "seo.about.title": "About — Nexora Creative Studio",
+  "seo.about.title": "About — Haryana Creative",
   "seo.about.desc":
-    "Nexora Creative Studio is a digital creative service brand founded by Sahil, combining AI tools with hands-on design to build premium digital experiences.",
-  "seo.contact.title": "Contact — Nexora Creative Studio",
+    "Haryana Creative is a digital creative service brand founded by Sahil, combining AI tools with hands-on design to build premium digital experiences.",
+  "seo.contact.title": "Contact — Haryana Creative",
   "seo.contact.desc":
-    "Start a project with Nexora Creative Studio. Share your brief on WhatsApp or email and get the next steps.",
-  "seo.faq.title": "FAQ — Nexora Creative Studio",
+    "Start a project with Haryana Creative. Share your brief on WhatsApp or email and get the next steps.",
+  "seo.faq.title": "FAQ — Haryana Creative",
   "seo.faq.desc":
-    "Answers about ordering, payment, delivery, revisions, reference files, websites and contacting Nexora Creative Studio.",
-  "seo.order.title": "Start Your Project — Nexora Creative Studio",
+    "Answers about ordering, payment, delivery, revisions, reference files, websites and contacting Haryana Creative.",
+  "seo.order.title": "Start Your Project — Haryana Creative",
   "seo.order.desc":
-    "Build your project brief, choose a service and package, and send your inquiry to Nexora Creative Studio through WhatsApp.",
-  "seo.privacy.title": "Privacy Policy — Nexora Creative Studio",
+    "Build your project brief, choose a service and package, and send your inquiry to Haryana Creative through WhatsApp.",
+  "seo.privacy.title": "Privacy Policy — Haryana Creative",
   "seo.privacy.desc":
-    "How Nexora Creative Studio handles information shared through this website and WhatsApp.",
-  "seo.terms.title": "Terms & Conditions — Nexora Creative Studio",
+    "How Haryana Creative handles information shared through this website and WhatsApp.",
+  "seo.terms.title": "Terms & Conditions — Haryana Creative",
   "seo.terms.desc":
-    "Terms for service inquiries and orders with Nexora Creative Studio.",
-  "seo.service.title": "{service} — Nexora Creative Studio",
-  "seo.notFound.title": "Page Not Found — Nexora Creative Studio",
+    "Terms for service inquiries and orders with Haryana Creative.",
+  "seo.service.title": "{service} — Haryana Creative",
+  "seo.notFound.title": "Page Not Found — Haryana Creative",
   "seo.notFound.desc": "The requested page could not be found.",
 } as const;
 

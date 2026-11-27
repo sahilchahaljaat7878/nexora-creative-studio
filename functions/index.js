@@ -1,5 +1,5 @@
 /**
- * Nexora Creative Studio — Firebase Cloud Function (API).
+ * Haryana Creative — Firebase Cloud Function (API).
  *
  * Serves the studio API that the website and the admin panel use:
  *   POST   /records            public  – store an order or enquiry
@@ -27,7 +27,7 @@ initializeApp();
 const db = getFirestore();
 
 const here = path.dirname(fileURLToPath(import.meta.url));
-const SESSION_COOKIE = "nexora_admin";
+const SESSION_COOKIE = "haryana_admin";
 const SESSION_TTL_MS = 8 * 60 * 60 * 1000;
 const KEY_LENGTH = 64;
 
@@ -285,7 +285,7 @@ app.delete("/admin/records/:id", requireAdmin, async (req, res) => {
 });
 
 app.get("/health", (_req, res) => {
-  res.json({ ok: true, service: "nexora-api" });
+  res.json({ ok: true, service: "haryana-api" });
 });
 
 app.use((error, _req, res, _next) => {

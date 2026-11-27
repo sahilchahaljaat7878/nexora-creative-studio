@@ -1,5 +1,5 @@
 /**
- * Nexora Creative Studio — application server.
+ * Haryana Creative — application server.
  *
  * Serves the built website (dist/) and a small JSON API:
  *   POST   /api/records            public  – store an order or enquiry
@@ -262,5 +262,5 @@ pruneSessions();
 setInterval(pruneSessions, 30 * 60 * 1000).unref();
 
 app.listen(PORT, () => {
-  console.log(`Nexora server running on http://localhost:${PORT}`);
+  console.log(`Haryana server running on http://localhost:${PORT}`);
 });

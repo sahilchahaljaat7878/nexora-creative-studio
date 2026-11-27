@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Nexora Creative Studio — premium digital creative agency website founded by Sahil.",
+  "description": "Haryana Creative — premium digital creative agency website founded by Sahil.",
   "scripts": {
     "dev": "node scripts/dev.mjs",
     "dev:web": "vite",

@@ -19,7 +19,7 @@ export const privacyPolicy: LegalDocument = {
       heading: { en: "1. Who we are", hi: "1. हम कौन हैं" },
       paragraphs: {
         en: [
-          "Nexora Creative Studio is an independent digital creative service brand founded by Sahil. References to “we”, “us” or “the studio” mean Nexora Creative Studio.",
+          "Haryana Creative is an independent digital creative service brand founded by Sahil. References to “we”, “us” or “the studio” mean Haryana Creative.",
           "This policy explains what information is involved when you browse this website or send a project inquiry through the order form, contact form, email or WhatsApp.",
         ],
         hi: [
@@ -69,7 +69,7 @@ export const privacyPolicy: LegalDocument = {
       },
       paragraphs: {
         en: [
-          "This website does not run its own backend database. When you submit the order or contact form, the site generates a prepared WhatsApp message and opens WhatsApp on your device. Nothing is submitted to a Nexora server.",
+          "This website does not run its own backend database. When you submit the order or contact form, the site generates a prepared WhatsApp message and opens WhatsApp on your device. Nothing is submitted to a Haryana server.",
           "If WhatsApp is unavailable, the site can prepare the same message for you to copy. You control whether and how the message is sent.",
           "WhatsApp is operated by Meta. Messages sent through WhatsApp are processed under WhatsApp's own terms and privacy policy.",
         ],
@@ -157,7 +157,7 @@ export const privacyPolicy: LegalDocument = {
       paragraphs: {
         en: [
           "This policy may be updated as the website or services change. The updated date at the top of the page shows when it was last revised.",
-          "For privacy questions, contact Nexora Creative Studio through the Contact page or the email address configured there. If no email is shown, use the WhatsApp channel.",
+          "For privacy questions, contact Haryana Creative through the Contact page or the email address configured there. If no email is shown, use the WhatsApp channel.",
         ],
         hi: [
           "वेबसाइट या सेवाओं में बदलाव के साथ यह नीति अपडेट हो सकती है। पेज के ऊपर दी गई अद्यतन तिथि बताती है कि इसे अंतिम बार कब संशोधित किया गया।",
@@ -176,7 +176,7 @@ export const termsAndConditions: LegalDocument = {
       heading: { en: "1. About these terms", hi: "1. इन शर्तों के बारे में" },
       paragraphs: {
         en: [
-          "These terms apply to the Nexora Creative Studio website and to service inquiries and orders placed through it. By using the site or sending an inquiry, you agree to these terms.",
+          "These terms apply to the Haryana Creative website and to service inquiries and orders placed through it. By using the site or sending an inquiry, you agree to these terms.",
           "A project-specific written agreement, quotation or scope document shared with you may add to or override parts of these general terms.",
         ],
         hi: [
@@ -393,7 +393,7 @@ export const termsAndConditions: LegalDocument = {
       paragraphs: {
         en: [
           "These terms may be updated from time to time. The version in effect when you place an order applies to that order, together with any project-specific agreement.",
-          "For questions about these terms, contact Nexora Creative Studio through the Contact page. These terms are a general template and are not legal advice.",
+          "For questions about these terms, contact Haryana Creative through the Contact page. These terms are a general template and are not legal advice.",
         ],
         hi: [
           "ये शर्तें समय-समय पर अपडेट हो सकती हैं। जिस संस्करण के समय आप ऑर्डर करते हैं, वही उस ऑर्डर पर लागू होता है, साथ में परियोजना-विशेष समझौता भी।",
