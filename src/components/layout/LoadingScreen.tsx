@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
+import { motion, useReducedMotion } from "framer-motion";
 import { brand } from "@/config/brand";
 import { useLanguage } from "@/context/LanguageContext";
 
@@ -8,8 +8,11 @@ export function LoadingScreen() {
   const reduceMotion = useReducedMotion();
   const { t } = useLanguage();
 
+  const scheduledRef = useRef(false);
   useEffect(() => {
-    const duration = reduceMotion ? 250 : 1150;
+    if (scheduledRef.current) return;
+    scheduledRef.current = true;
+    const duration = reduceMotion ? 250 : 900;
     const timer = window.setTimeout(() => setVisible(false), duration);
     return () => window.clearTimeout(timer);
   }, [reduceMotion]);
@@ -23,18 +26,19 @@ export function LoadingScreen() {
     };
   }, [visible]);
 
+  if (!visible) return null;
+
   return (
-    <AnimatePresence>
-      {visible && (
-        <motion.div
-          className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-ink"
-          initial={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.55, ease: "easeInOut" }}
-          role="status"
-          aria-live="polite"
-          aria-label={t("common.loading")}
-        >
+    <motion.div
+      className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-ink"
+      initial={{ opacity: 1 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.35, ease: "easeInOut" }}
+      role="status"
+      aria-live="polite"
+      aria-label={t("common.loading")}
+    >
           <div
             aria-hidden="true"
             className="pointer-events-none absolute left-1/2 top-1/2 h-[420px] w-[420px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-purple/20 blur-[120px]"
@@ -81,7 +85,5 @@ export function LoadingScreen() {
             </p>
           </div>
         </motion.div>
-      )}
-    </AnimatePresence>
   );
 }
