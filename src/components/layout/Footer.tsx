@@ -59,7 +59,7 @@ export function Footer() {
       <div className="container-page relative z-10 py-16 md:py-20">
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-8">
           <div className="lg:col-span-4">
-            <Logo markClassName="h-11 w-11" />
+            <Logo markClassName="h-11 w-auto" />
             <p className="mt-6 max-w-sm text-sm leading-relaxed text-muted">
               {t("footer.description")}
             </p>
