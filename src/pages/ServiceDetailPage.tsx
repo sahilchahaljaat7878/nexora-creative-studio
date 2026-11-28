@@ -69,6 +69,7 @@ function ServiceDetailContent({ service }: { service: Service }) {
         title={localizeText(service.name)}
         subtitle={localizeText(service.tagline)}
         breadcrumb={localizeText(service.shortName)}
+        backgroundImage="/images/backgrounds/bg-02.webp"
       >
         <ButtonLink to={orderLink(service.id)} withArrow>
           {t("common.orderNow")}

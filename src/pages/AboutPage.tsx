@@ -34,6 +34,7 @@ export default function AboutPage() {
         title={t("about.title")}
         subtitle={t("about.intro")}
         breadcrumb={t("nav.about")}
+        backgroundImage="/images/backgrounds/bg-01.webp"
       >
         <ButtonLink to="/order" withArrow>
           {t("common.startProject")}

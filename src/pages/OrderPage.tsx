@@ -24,6 +24,7 @@ export default function OrderPage() {
         title={t("order.title")}
         subtitle={t("order.subtitle")}
         breadcrumb={t("nav.getStarted")}
+        backgroundImage="/images/backgrounds/bg-04.webp"
       >
         <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-[11px] text-white/55">
           <ShieldCheck className="h-3.5 w-3.5 text-violet-300" aria-hidden="true" />

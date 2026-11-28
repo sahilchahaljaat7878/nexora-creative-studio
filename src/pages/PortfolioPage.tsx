@@ -24,6 +24,7 @@ export default function PortfolioPage() {
         title={t("portfolio.title")}
         subtitle={t("portfolio.subtitle")}
         breadcrumb={t("nav.portfolio")}
+        backgroundImage="/images/backgrounds/bg-01.webp"
       >
         <ButtonLink to="/order" withArrow>
           {t("common.startProject")}

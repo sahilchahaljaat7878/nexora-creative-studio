@@ -11,6 +11,8 @@ interface PageHeroProps {
   breadcrumb: string;
   children?: ReactNode;
   className?: string;
+  /** Optional faint background image (path under /public). */
+  backgroundImage?: string;
 }
 
 export function PageHero({
@@ -20,6 +22,7 @@ export function PageHero({
   breadcrumb,
   children,
   className,
+  backgroundImage,
 }: PageHeroProps) {
   const { t } = useLanguage();
 
@@ -42,6 +45,13 @@ export function PageHero({
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 grid-lines opacity-40 [mask-image:radial-gradient(ellipse_at_center,black,transparent_75%)]"
       />
+      {backgroundImage && (
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 bg-cover bg-center opacity-25 [mask-image:radial-gradient(ellipse_at_center,black,transparent_85%)]"
+          style={{ backgroundImage: `url(${backgroundImage})` }}
+        />
+      )}
 
       <div className="container-page relative z-10">
         <nav aria-label="Breadcrumb" className="mb-8 flex items-center gap-2 text-[11px] text-muted">

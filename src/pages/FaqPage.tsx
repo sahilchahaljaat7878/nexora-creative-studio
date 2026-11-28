@@ -55,6 +55,7 @@ export default function FaqPage() {
         title={t("faq.title")}
         subtitle={t("faq.subtitle")}
         breadcrumb={t("nav.faq")}
+        backgroundImage="/images/backgrounds/bg-03.webp"
       >
         <ButtonLink to="/contact" withArrow>
           {t("common.contactUs")}

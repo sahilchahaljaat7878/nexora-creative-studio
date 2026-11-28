@@ -53,6 +53,7 @@ export default function ContactPage() {
         title={t("contact.title")}
         subtitle={t("contact.subtitle")}
         breadcrumb={t("nav.contact")}
+        backgroundImage="/images/backgrounds/bg-02.webp"
       >
         <span className="inline-flex items-center gap-2 rounded-full border border-emerald-400/20 bg-emerald-500/[0.08] px-4 py-2 text-[11px] font-medium text-emerald-200">
           <span className="relative flex h-2 w-2">

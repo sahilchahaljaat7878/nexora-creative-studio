@@ -69,6 +69,11 @@ export function Hero() {
     <section className="relative overflow-hidden pb-16 pt-28 sm:pt-32 lg:pb-24 lg:pt-36">
       <div
         aria-hidden="true"
+        className="pointer-events-none absolute inset-0 bg-cover bg-center opacity-20 [mask-image:radial-gradient(ellipse_at_center,black,transparent_85%)]"
+        style={{ backgroundImage: "url(/images/backgrounds/bg-01.webp)" }}
+      />
+      <div
+        aria-hidden="true"
         className="pointer-events-none absolute inset-0 grid-lines opacity-[0.55] [mask-image:radial-gradient(ellipse_at_50%_20%,black,transparent_72%)]"
       />
       <div

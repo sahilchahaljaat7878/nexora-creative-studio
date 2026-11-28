@@ -26,6 +26,7 @@ export default function ServicesPage() {
         title={t("services.title")}
         subtitle={t("services.subtitle")}
         breadcrumb={t("nav.services")}
+        backgroundImage="/images/backgrounds/bg-02.webp"
       >
         <ButtonLink to="/order" withArrow>
           {t("common.startProject")}

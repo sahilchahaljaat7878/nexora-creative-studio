@@ -33,6 +33,7 @@ export default function PricingPage() {
         title={t("pricing.title")}
         subtitle={t("pricing.subtitle")}
         breadcrumb={t("nav.pricing")}
+        backgroundImage="/images/backgrounds/bg-03.webp"
       >
         <ButtonLink to="/order" withArrow>
           {t("common.startProject")}
