@@ -327,14 +327,14 @@ Lighthouse (mobile) scores **100 / 100 / 100** for accessibility, best practices
 
 ### Firebase Hosting (live site)
 
-The project is already connected to Firebase project **`nexora-creative-studio`**.
+The project is already connected to Firebase project **`haryana-creative-studio`**.
 
 ```bash
 npm run build                                   # build the site into dist/
-firebase deploy --only hosting --project nexora-creative-studio
+firebase deploy --only hosting --project haryana-creative-studio
 ```
 
-Live URL: **https://nexora-creative-studio.web.app** (also `https://nexora-creative-studio.firebaseapp.com`)
+Live URL: **https://haryana-creative-studio.web.app** (also `https://haryana-creative-studio.firebaseapp.com`)
 
 `firebase.json` handles the SPA routing (every route to `index.html`), long-term caching for `/assets/**`, security headers, and the `/api/**` rewrite that points at the Cloud Function.
 
@@ -350,11 +350,11 @@ The API that powers the admin panel and order tracking lives in `functions/`:
 Deploy it with:
 
 ```bash
-firebase deploy --only functions,firestore --project nexora-creative-studio
+firebase deploy --only functions,firestore --project haryana-creative-studio
 ```
 
 > **Cloud Functions require the Blaze (pay-as-you-go) plan.** Enable it once at
-> https://console.firebase.google.com/project/nexora-creative-studio/usage/details
+> https://console.firebase.google.com/project/haryana-creative-studio/usage/details
 > (Blaze has a free tier - you only pay for actual usage), then run the command above.
 > Until then the website works fully (WhatsApp + email fallback) and the admin panel
 > shows a clear "API is not connected yet" notice instead of failing silently.

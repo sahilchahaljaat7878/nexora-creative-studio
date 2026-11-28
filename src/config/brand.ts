@@ -14,7 +14,7 @@ export const brand = {
   shortDescription:
     "Premium AI visuals, cinematic videos, creative design and modern websites for brands that want to stand out.",
   /** Update this to your live domain once deployed (no trailing slash). */
-  websiteUrl: "https://nexora-creative-studio.web.app",
+  websiteUrl: "https://haryana-creative-studio.web.app",
   copyrightYear: 2026,
   logo: {
     /** Abstract N mark — unique to Haryana. */

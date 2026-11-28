@@ -2,5 +2,5 @@ User-agent: *
 Allow: /
 Disallow: /admin
 
-# Replace https://nexora-creative-studio.web.app with your live domain before deploying.
-Sitemap: https://nexora-creative-studio.web.app/sitemap.xml
+# Replace https://haryana-creative-studio.web.app with your live domain before deploying.
+Sitemap: https://haryana-creative-studio.web.app/sitemap.xml
