@@ -44,29 +44,14 @@ export function LoadingScreen() {
               initial={{ opacity: 0, scale: 0.92 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-              className="relative flex h-[74px] w-[74px] items-center justify-center rounded-[20px] border border-white/15 bg-ink-800"
+              className="relative flex h-[74px] w-[132px] items-center justify-center rounded-[20px] border border-white/15 bg-ink-800"
             >
-              <svg viewBox="0 0 64 64" className="h-12 w-12" aria-hidden="true">
-                <defs>
-                  <linearGradient id="loader-mark" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0" stopColor="#C4B5FD" />
-                    <stop offset="0.45" stopColor="#A855F7" />
-                    <stop offset="1" stopColor="#6366F1" />
-                  </linearGradient>
-                </defs>
-                <motion.path
-                  d="M17 46 V19 L47 46 V19"
-                  fill="none"
-                  stroke="url(#loader-mark)"
-                  strokeWidth="7"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  initial={{ pathLength: 0, opacity: 0.2 }}
-                  animate={{ pathLength: 1, opacity: 1 }}
-                  transition={{ duration: reduceMotion ? 0.2 : 0.9, ease: "easeInOut" }}
-                />
-                <circle cx="47" cy="15" r="3.4" fill="#E9D5FF" />
-              </svg>
+              <img
+                src="/favicon/logo.png"
+                alt="Haryana Creative"
+                className="h-10 w-auto object-contain"
+                decoding="async"
+              />
             </motion.div>
 
             <motion.div
