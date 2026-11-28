@@ -134,7 +134,7 @@ export default function AboutPage() {
                   className="pointer-events-none absolute -right-14 -top-14 h-48 w-48 rounded-full bg-brand-purple/20 blur-[70px]"
                 />
                 <div className="relative flex items-start gap-5">
-                  <LogoMark className="h-16 w-16 shrink-0 rounded-[18px] border border-white/10" />
+                  <LogoMark className="h-16 w-auto shrink-0" />
                   <div>
                     <p className="font-mono text-[9px] uppercase tracking-[0.24em] text-violet-300">
                       {t("about.founderTitle")}

@@ -1,4 +1,3 @@
-import { useId } from "react";
 import { Link } from "react-router-dom";
 import { brand } from "@/config/brand";
 import { cn } from "@/lib/utils";
@@ -6,52 +5,18 @@ import { cn } from "@/lib/utils";
 /** Abstract N mark, unique to Haryana Creative. */
 export function LogoMark({
   className,
-  plain = false,
 }: {
   className?: string;
   plain?: boolean;
 }) {
-  const rawId = useId().replace(/[:]/g, "");
-  const gradientId = `haryana-mark-${rawId}`;
-
   return (
-    <svg
-      viewBox="0 0 64 64"
-      className={cn("shrink-0", className)}
-      role="img"
-      aria-label="Haryana Creative logo"
-    >
-      <defs>
-        <linearGradient id={gradientId} x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stopColor="#C4B5FD" />
-          <stop offset="0.45" stopColor="#A855F7" />
-          <stop offset="1" stopColor="#6366F1" />
-        </linearGradient>
-      </defs>
-      {!plain && (
-        <>
-          <rect width="64" height="64" rx="15" fill="#11111B" />
-          <rect
-            x="1"
-            y="1"
-            width="62"
-            height="62"
-            rx="14"
-            fill="none"
-            stroke="rgba(255,255,255,0.14)"
-          />
-        </>
-      )}
-      <path
-        d="M17 46 V19 L47 46 V19"
-        fill="none"
-        stroke={`url(#${gradientId})`}
-        strokeWidth="7"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <circle cx="47" cy="15" r="3.4" fill="#E9D5FF" />
-    </svg>
+    <img
+      src="/favicon/logo.png"
+      alt="Haryana Creative logo"
+      className={cn("shrink-0 object-contain", className)}
+      decoding="async"
+      loading="eager"
+    />
   );
 }
 

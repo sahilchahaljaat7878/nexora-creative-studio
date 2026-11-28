@@ -62,7 +62,7 @@ export function Navbar() {
       >
         <div className="container-page">
           <div className="flex h-[76px] items-center justify-between gap-3">
-            <Logo markClassName="h-9 w-9 sm:h-10 sm:w-10" />
+            <Logo markClassName="h-9 w-auto sm:h-10" />
 
             <nav aria-label="Main navigation" className="hidden items-center gap-7 lg:flex">
               {navItems.map((item) => (
